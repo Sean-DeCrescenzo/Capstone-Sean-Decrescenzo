@@ -1,504 +1,504 @@
-package_id, address, city, state, zip, weight,,,,,,,,
-1,195 W Oakland Ave,Salt Lake City,UT,84115,21,,,,,,,,
-2,2530 S 500 E,Salt Lake City,UT,84106,44,,,,,,,,
-3,233 Canyon Rd,Salt Lake City,UT,84103,2,,,,,,,,
-4,380 W 2880 S,Salt Lake City,UT,84115,4,,,,,,,,
-5,410 S State St,Salt Lake City,UT,84111,5,,,,,,,,
-6,3060 Lester St,West Valley City,UT,84119,88,,,,,,,,
-7,1330 2100 S,Salt Lake City,UT,84106,8,,,,,,,,
-8,300 State St,Salt Lake City,UT,84103,9,,,,,,,,
-9,300 State St,Salt Lake City,UT,84103,2,,,,,,,,
-10,600 E 900 South,Salt Lake City,UT,84105,1,,,,,,,,
-11,2600 Taylorsville Blvd,Salt Lake City,UT,84118,1,,,,,,,,
-12,3575 W Valley Central Station bus Loop,West Valley City,UT,84119,1,,,,,,,,
-13,2010 W 500 S,Salt Lake City,UT,84104,2,,,,,,,,
-14,4300 S 1300 E,Millcreek,UT,84117,88,,,,,,,,
-15,4580 S 2300 E,Holladay,UT,84117,4,,,,,,,,
-16,4580 S 2300 E,Holladay,UT,84117,88,,,,,,,,
-17,3148 S 1100 W,Salt Lake City,UT,84119,2,,,,,,,,
-18,1488 4800 S,Salt Lake City,UT,84123,6,,,,,,,,
-19,177 W Price Ave,Salt Lake City,UT,84115,37,,,,,,,,
-20,3595 Main St,Salt Lake City,UT,84115,37,,,,,,,,
-21,3595 Main St,Salt Lake City,UT,84115,3,,,,,,,,
-22,6351 South 900 East,Murray,UT,84121,2,,,,,,,,
-23,5100 South 2700 West,Salt Lake City,UT,84118,5,,,,,,,,
-24,5025 State St,Murray,UT,84107,7,,,,,,,,
-25,5383 South 900 East #104,Salt Lake City,UT,84117,7,,,,,,,,
-26,5383 South 900 East #104,Salt Lake City,UT,84117,25,,,,,,,,
-27,1060 Dalton Ave S,Salt Lake City,UT,84104,5,,,,,,,,
-28,2835 Main St,Salt Lake City,UT,84115,7,,,,,,,,
-29,1330 2100 S,Salt Lake City,UT,84106,2,,,,,,,,
-30,300 State St,Salt Lake City,UT,84103,1,,,,,,,,
-31,3365 S 900 W,Salt Lake City,UT,84119,1,,,,,,,,
-32,3365 S 900 W,Salt Lake City,UT,84119,1,,,,,,,,
-33,2530 S 500 E,Salt Lake City,UT,84106,1,,,,,,,,
-34,4580 S 2300 E,Holladay,UT,84117,2,,,,,,,,
-35,1060 Dalton Ave S,Salt Lake City,UT,84104,88,,,,,,,,
-36,2300 Parkway Blvd,West Valley City,UT,84119,88,,,,,,,,
-37,410 S State St,Salt Lake City,UT,84111,2,,,,,,,,
-38,410 S State St,Salt Lake City,UT,84111,9,,,,,,,,
-39,2010 W 500 S,Salt Lake City,UT,84104,9,,,,,,,,
-40,380 W 2880 S,Salt Lake City,UT,84115,45,,,,,,,,
-41,1234 W 4567 S,Salt Lake City,UT,84115,43,,,,,,,,
-42,9876 E 5432 N,Salt Lake City,UT,84106,18,,,,,,,,
-43,2468 S 1357 W,Salt Lake City,UT,84103,31,,,,,,,,
-44,5555 N 9999 E,Salt Lake City,UT,84119,59,,,,,,,,
-45,4321 N 8765 E,Salt Lake City,UT,84119,28,,,,,,,,
-46,9876 S 1234 W,Salt Lake City,UT,84106,33,,,,,,,,
-47,2468 E 7531 N,Salt Lake City,UT,84117,18,,,,,,,,
-48,5555 W 2222 S,Salt Lake City,UT,84104,33,,,,,,,,
-49,7777 E 3333 N,Salt Lake City,UT,84119,10,,,,,,,,
-50,1234 S 6543 W,Salt Lake City,UT,84111,9,,,,,,,,
-51,9876 N 4321 E,Salt Lake City,UT,84111,44,,,,,,,,
-52,2468 W 3579 S,Salt Lake City,UT,84104,54,,,,,,,,
-53,5555 E 8888 N,Salt Lake City,UT,84115,36,,,,,,,,
-54,7777 S 4444 W,Salt Lake City,UT,84115,52,,,,,,,,
-55,1111 W 2222 N,Salt Lake City,UT,84106,35,,,,,,,,
-56,3333 E 4444 S,Salt Lake City,UT,84103,15,,,,,,,,
-57,5555 N 6666 E,Salt Lake City,UT,84119,21,,,,,,,,
-58,7777 W 8888 S,Salt Lake City,UT,84119,24,,,,,,,,
-59,9999 E 1111 N,Salt Lake City,UT,84106,25,,,,,,,,
-60,2222 S 3333 W,Salt Lake City,UT,84117,10,,,,,,,,
-61,4444 N 5555 E,Salt Lake City,UT,84104,36,,,,,,,,
-62,6666 E 7777 N,Salt Lake City,UT,84119,42,,,,,,,,
-63,8888 S 9999 W,Salt Lake City,UT,84111,53,,,,,,,,
-64,2468 W 3579 S,Salt Lake City,UT,84104,7,,,,,,,,
-65,2530 S 500 E,Salt Lake City,UT,84106,12,,,,,,,,
-66,5383 South 900 East #104,Salt Lake City,UT,84117,1,,,,,,,,
-67,2530 S 500 E,Salt Lake City,UT,84106,1,,,,,,,,
-68,7777 E 3333 N,Salt Lake City,UT,84119,14,,,,,,,,
-69,2468 E 7531 N,Salt Lake City,UT,84117,9,,,,,,,,
-70,3365 S 900 W,Salt Lake City,UT,84119,15,,,,,,,,
-71,2222 S 3333 W,Salt Lake City,UT,84117,8,,,,,,,,
-72,2600 Taylorsville Blvd,Salt Lake City,UT,84118,15,,,,,,,,
-73,4580 S 2300 E,Holladay,UT,84117,10,,,,,,,,
-74,3333 E 4444 S,Salt Lake City,UT,84103,10,,,,,,,,
-75,1234 W 4567 S,Salt Lake City,UT,84115,3,,,,,,,,
-76,300 State St,Salt Lake City,UT,84103,7,,,,,,,,
-77,4321 N 8765 E,Salt Lake City,UT,84119,11,,,,,,,,
-78,5383 South 900 East #104,Salt Lake City,UT,84117,13,,,,,,,,
-79,177 W Price Ave,Salt Lake City,UT,84115,4,,,,,,,,
-80,4321 N 8765 E,Salt Lake City,UT,84119,11,,,,,,,,
-81,8888 S 9999 W,Salt Lake City,UT,84111,7,,,,,,,,
-82,4444 N 5555 E,Salt Lake City,UT,84104,7,,,,,,,,
-83,9876 S 1234 W,Salt Lake City,UT,84106,14,,,,,,,,
-84,5383 South 900 East #104,Salt Lake City,UT,84117,7,,,,,,,,
-85,3365 S 900 W,Salt Lake City,UT,84119,4,,,,,,,,
-86,600 E 900 South,Salt Lake City,UT,84105,1,,,,,,,,
-87,2530 S 500 E,Salt Lake City,UT,84106,12,,,,,,,,
-88,2300 Parkway Blvd,West Valley City,UT,84119,2,,,,,,,,
-89,4444 N 5555 E,Salt Lake City,UT,84104,7,,,,,,,,
-90,5555 N 9999 E,Salt Lake City,UT,84119,4,,,,,,,,
-91,1060 Dalton Ave S,Salt Lake City,UT,84104,15,,,,,,,,
-92,3595 Main St,Salt Lake City,UT,84115,7,,,,,,,,
-93,5383 South 900 East #104,Salt Lake City,UT,84117,10,,,,,,,,
-94,4300 S 1300 E,Millcreek,UT,84117,14,,,,,,,,
-95,9876 E 5432 N,Salt Lake City,UT,84106,14,,,,,,,,
-96,4300 S 1300 E,Millcreek,UT,84117,10,,,,,,,,
-97,3595 Main St,Salt Lake City,UT,84115,5,,,,,,,,
-98,3595 Main St,Salt Lake City,UT,84115,15,,,,,,,,
-99,380 W 2880 S,Salt Lake City,UT,84115,7,,,,,,,,
-100,7777 W 8888 S,Salt Lake City,UT,84119,5,,,,,,,,
-101,410 S State St,Salt Lake City,UT,84111,5,,,,,,,,
-102,3333 E 4444 S,Salt Lake City,UT,84103,7,,,,,,,,
-103,7777 W 8888 S,Salt Lake City,UT,84119,8,,,,,,,,
-104,177 W Price Ave,Salt Lake City,UT,84115,14,,,,,,,,
-105,410 S State St,Salt Lake City,UT,84111,1,,,,,,,,
-106,380 W 2880 S,Salt Lake City,UT,84115,3,,,,,,,,
-107,4444 N 5555 E,Salt Lake City,UT,84104,6,,,,,,,,
-108,5100 South 2700 West,Salt Lake City,UT,84118,3,,,,,,,,
-109,5555 N 6666 E,Salt Lake City,UT,84119,5,,,,,,,,
-110,2010 W 500 S,Salt Lake City,UT,84104,8,,,,,,,,
-111,2530 S 500 E,Salt Lake City,UT,84106,6,,,,,,,,
-112,4580 S 2300 E,Holladay,UT,84117,15,,,,,,,,
-113,3148 S 1100 W,Salt Lake City,UT,84119,3,,,,,,,,
-114,4444 N 5555 E,Salt Lake City,UT,84104,4,,,,,,,,
-115,4300 S 1300 E,Millcreek,UT,84117,11,,,,,,,,
-116,410 S State St,Salt Lake City,UT,84111,9,,,,,,,,
-117,3595 Main St,Salt Lake City,UT,84115,1,,,,,,,,
-118,300 State St,Salt Lake City,UT,84103,4,,,,,,,,
-119,5555 N 6666 E,Salt Lake City,UT,84119,12,,,,,,,,
-120,300 State St,Salt Lake City,UT,84103,5,,,,,,,,
-121,2835 Main St,Salt Lake City,UT,84115,9,,,,,,,,
-122,7777 S 4444 W,Salt Lake City,UT,84115,2,,,,,,,,
-123,410 S State St,Salt Lake City,UT,84111,4,,,,,,,,
-124,1330 2100 S,Salt Lake City,UT,84106,2,,,,,,,,
-125,4321 N 8765 E,Salt Lake City,UT,84119,2,,,,,,,,
-126,2300 Parkway Blvd,West Valley City,UT,84119,3,,,,,,,,
-127,7777 W 8888 S,Salt Lake City,UT,84119,13,,,,,,,,
-128,1234 S 6543 W,Salt Lake City,UT,84111,14,,,,,,,,
-129,5555 W 2222 S,Salt Lake City,UT,84104,13,,,,,,,,
-130,1488 4800 S,Salt Lake City,UT,84123,13,,,,,,,,
-131,2530 S 500 E,Salt Lake City,UT,84106,9,,,,,,,,
-132,410 S State St,Salt Lake City,UT,84111,9,,,,,,,,
-133,195 W Oakland Ave,Salt Lake City,UT,84115,10,,,,,,,,
-134,4321 N 8765 E,Salt Lake City,UT,84119,9,,,,,,,,
-135,5383 South 900 East #104,Salt Lake City,UT,84117,3,,,,,,,,
-136,5025 State St,Murray,UT,84107,8,,,,,,,,
-137,3148 S 1100 W,Salt Lake City,UT,84119,10,,,,,,,,
-138,5383 South 900 East #104,Salt Lake City,UT,84117,8,,,,,,,,
-139,2010 W 500 S,Salt Lake City,UT,84104,3,,,,,,,,
-140,4580 S 2300 E,Holladay,UT,84117,6,,,,,,,,
-141,3333 E 4444 S,Salt Lake City,UT,84103,9,,,,,,,,
-142,3060 Lester St,West Valley City,UT,84119,8,,,,,,,,
-143,9876 N 4321 E,Salt Lake City,UT,84111,8,,,,,,,,
-144,9876 S 1234 W,Salt Lake City,UT,84106,12,,,,,,,,
-145,4300 S 1300 E,Millcreek,UT,84117,6,,,,,,,,
-146,233 Canyon Rd,Salt Lake City,UT,84103,15,,,,,,,,
-147,4580 S 2300 E,Holladay,UT,84117,14,,,,,,,,
-148,6666 E 7777 N,Salt Lake City,UT,84119,5,,,,,,,,
-149,3595 Main St,Salt Lake City,UT,84115,15,,,,,,,,
-150,5100 South 2700 West,Salt Lake City,UT,84118,13,,,,,,,,
-151,195 W Oakland Ave,Salt Lake City,UT,84115,15,,,,,,,,
-152,1330 2100 S,Salt Lake City,UT,84106,5,,,,,,,,
-153,1060 Dalton Ave S,Salt Lake City,UT,84104,4,,,,,,,,
-154,380 W 2880 S,Salt Lake City,UT,84115,13,,,,,,,,
-155,380 W 2880 S,Salt Lake City,UT,84115,7,,,,,,,,
-156,4300 S 1300 E,Millcreek,UT,84117,15,,,,,,,,
-157,410 S State St,Salt Lake City,UT,84111,3,,,,,,,,
-158,300 State St,Salt Lake City,UT,84103,14,,,,,,,,
-159,3365 S 900 W,Salt Lake City,UT,84119,3,,,,,,,,
-160,195 W Oakland Ave,Salt Lake City,UT,84115,11,,,,,,,,
-161,1234 W 4567 S,Salt Lake City,UT,84115,2,,,,,,,,
-162,7777 E 3333 N,Salt Lake City,UT,84119,7,,,,,,,,
-163,9876 N 4321 E,Salt Lake City,UT,84111,6,,,,,,,,
-164,3060 Lester St,West Valley City,UT,84119,11,,,,,,,,
-165,9876 E 5432 N,Salt Lake City,UT,84106,10,,,,,,,,
-166,380 W 2880 S,Salt Lake City,UT,84115,1,,,,,,,,
-167,2468 E 7531 N,Salt Lake City,UT,84117,2,,,,,,,,
-168,5383 South 900 East #104,Salt Lake City,UT,84117,11,,,,,,,,
-169,5555 N 6666 E,Salt Lake City,UT,84119,8,,,,,,,,
-170,1111 W 2222 N,Salt Lake City,UT,84106,2,,,,,,,,
-171,2600 Taylorsville Blvd,Salt Lake City,UT,84118,15,,,,,,,,
-172,410 S State St,Salt Lake City,UT,84111,4,,,,,,,,
-173,2010 W 500 S,Salt Lake City,UT,84104,5,,,,,,,,
-174,2300 Parkway Blvd,West Valley City,UT,84119,11,,,,,,,,
-175,5555 N 6666 E,Salt Lake City,UT,84119,10,,,,,,,,
-176,3595 Main St,Salt Lake City,UT,84115,3,,,,,,,,
-177,195 W Oakland Ave,Salt Lake City,UT,84115,4,,,,,,,,
-178,1488 4800 S,Salt Lake City,UT,84123,3,,,,,,,,
-179,4580 S 2300 E,Holladay,UT,84117,12,,,,,,,,
-180,177 W Price Ave,Salt Lake City,UT,84115,2,,,,,,,,
-181,2010 W 500 S,Salt Lake City,UT,84104,1,,,,,,,,
-182,380 W 2880 S,Salt Lake City,UT,84115,12,,,,,,,,
-183,5555 N 9999 E,Salt Lake City,UT,84119,2,,,,,,,,
-184,600 E 900 South,Salt Lake City,UT,84105,6,,,,,,,,
-185,1330 2100 S,Salt Lake City,UT,84106,7,,,,,,,,
-186,1330 2100 S,Salt Lake City,UT,84106,6,,,,,,,,
-187,5100 South 2700 West,Salt Lake City,UT,84118,2,,,,,,,,
-188,300 State St,Salt Lake City,UT,84103,15,,,,,,,,
-189,4444 N 5555 E,Salt Lake City,UT,84104,1,,,,,,,,
-190,3595 Main St,Salt Lake City,UT,84115,7,,,,,,,,
-191,300 State St,Salt Lake City,UT,84103,2,,,,,,,,
-192,4580 S 2300 E,Holladay,UT,84117,15,,,,,,,,
-193,4580 S 2300 E,Holladay,UT,84117,9,,,,,,,,
-194,9876 S 1234 W,Salt Lake City,UT,84106,11,,,,,,,,
-195,2530 S 500 E,Salt Lake City,UT,84106,6,,,,,,,,
-196,6666 E 7777 N,Salt Lake City,UT,84119,5,,,,,,,,
-197,7777 S 4444 W,Salt Lake City,UT,84115,11,,,,,,,,
-198,300 State St,Salt Lake City,UT,84103,3,,,,,,,,
-199,2010 W 500 S,Salt Lake City,UT,84104,15,,,,,,,,
-200,2010 W 500 S,Salt Lake City,UT,84104,12,,,,,,,,
-201,123 Main St,Salt Lake City,UT,84118,35,,,,,,,,
-202,456 Elm St,Salt Lake City,UT,84115,14,,,,,,,,
-203,789 Oak St,Salt Lake City,UT,84106,3,,,,,,,,
-204,1011 Maple Ave,Salt Lake City,UT,84104,40,,,,,,,,
-205,1213 Pine St,Salt Lake City,UT,84115,14,,,,,,,,
-206,1415 Cedar Ave,Salt Lake City,UT,84115,7,,,,,,,,
-207,1617 Birch St,Salt Lake City,UT,84117,32,,,,,,,,
-208,1819 Willow Ave,Salt Lake City,UT,84111,15,,,,,,,,
-209,2021 Spruce St,Salt Lake City,UT,84103,15,,,,,,,,
-210,2223 Walnut Ave,Salt Lake City,UT,84119,30,,,,,,,,
-211,2425 Chestnut St,Salt Lake City,UT,84115,8,,,,,,,,
-212,2627 Ash Ave,Salt Lake City,UT,84115,20,,,,,,,,
-213,2829 Beech St,Salt Lake City,UT,84119,8,,,,,,,,
-214,3031 Sycamore Ave,Salt Lake City,UT,84111,3,,,,,,,,
-215,3233 Magnolia St,Salt Lake City,UT,84119,12,,,,,,,,
-216,3435 Poplar Ave,Salt Lake City,UT,84106,5,,,,,,,,
-217,3637 Cypress St,Salt Lake City,UT,84115,10,,,,,,,,
-218,3839 Juniper Ave,Salt Lake City,UT,84117,5,,,,,,,,
-219,4041 Laurel St,Salt Lake City,UT,84117,8,,,,,,,,
-220,4243 Redwood Ave,Salt Lake City,UT,84119,12,,,,,,,,
-221,4445 Sequoia St,Salt Lake City,UT,84106,16,,,,,,,,
-222,4647 Pinehurst Ave,Salt Lake City,UT,84118,35,,,,,,,,
-223,4849 Forest St,Salt Lake City,UT,84111,30,,,,,,,,
-224,5051 Willowcrest Ave,Salt Lake City,UT,84104,40,,,,,,,,
-225,5253 Greenbriar St,Salt Lake City,UT,84119,3,,,,,,,,
-226,5455 Oakwood Ave,Salt Lake City,UT,84119,24,,,,,,,,
-227,5657 Meadowbrook St,Salt Lake City,UT,84115,12,,,,,,,,
-228,5859 Cedarwood Ave,Salt Lake City,UT,84115,4,,,,,,,,
-229,6061 Maplewood St,Salt Lake City,UT,84123,1,,,,,,,,
-230,6263 Walnutwood Ave,Salt Lake City,UT,84117,5,,,,,,,,
-231,6465 Birchwood St,Salt Lake City,UT,84115,21,,,,,,,,
-232,6667 Sprucewood Ave,Salt Lake City,UT,84104,20,,,,,,,,
-233,6869 Sycamorewood St,Salt Lake City,UT,84115,20,,,,,,,,
-234,7071 Magnoliawood Ave,Salt Lake City,UT,84119,6,,,,,,,,
-235,7273 Poplarwood St,Salt Lake City,UT,84105,25,,,,,,,,
-236,7475 Cypresswood Ave,Salt Lake City,UT,84106,16,,,,,,,,
-237,7677 Juniperwood St,Salt Lake City,UT,84106,14,,,,,,,,
-238,7879 Laurelwood Ave,Salt Lake City,UT,84118,12,,,,,,,,
-239,8081 Redwoodwood St,Salt Lake City,UT,84103,16,,,,,,,,
-240,8283 Sequoiawood Ave,Salt Lake City,UT,84104,24,,,,,,,,
-241,8485 Pinehurstwood St,Salt Lake City,UT,84115,32,,,,,,,,
-242,8687 Forestwood Ave,Salt Lake City,UT,84103,4,,,,,,,,
-243,8889 Willowcrestwood St,Salt Lake City,UT,84117,25,,,,,,,,
-244,9091 Greenbriarwood Ave,Salt Lake City,UT,84117,16,,,,,,,,
-245,9293 Oakwoodcrest St,Salt Lake City,UT,84106,5,,,,,,,,
-246,9495 Meadowbrookwood Ave,Salt Lake City,UT,84106,8,,,,,,,,
-247,9697 Cedarwoodcrest St,Salt Lake City,UT,84119,40,,,,,,,,
-248,9899 Maplewoodcrest Ave,Salt Lake City,UT,84115,1,,,,,,,,
-249,1001 Walnutwoodcrest St,Salt Lake City,UT,84103,12,,,,,,,,
-250,1021 Birchwoodcrest Ave,Salt Lake City,UT,84104,15,,,,,,,,
-251,674 Pennsylvanie St,Salt Lake City,UT,84104,2,,,,,,,,
-252,8283 Sequoiawood Ave,Salt Lake City,UT,84104,6,,,,,,,,
-253,8889 Willowcrestwood St,Salt Lake City,UT,84117,15,,,,,,,,
-254,3365 S 900 W,Salt Lake City,UT,84119,24,,,,,,,,
-255,3333 E 4444 S,Salt Lake City,UT,84103,12,,,,,,,,
-256,7677 Juniperwood St,Salt Lake City,UT,84106,7,,,,,,,,
-257,123 Main St,Salt Lake City,UT,84118,4,,,,,,,,
-258,2600 Taylorsville Blvd,Salt Lake City,UT,84118,4,,,,,,,,
-259,7677 Juniperwood St,Salt Lake City,UT,84106,40,,,,,,,,
-260,3595 Main St,Salt Lake City,UT,84115,24,,,,,,,,
-261,5025 State St,Murray,UT,84107,4,,,,,,,,
-262,6061 Maplewood St,Salt Lake City,UT,84123,16,,,,,,,,
-263,2300 Parkway Blvd,West Valley City,UT,84119,24,,,,,,,,
-264,1011 Maple Ave,Salt Lake City,UT,84104,24,,,,,,,,
-265,7777 S 4444 W,Salt Lake City,UT,84115,14,,,,,,,,
-266,3233 Magnolia St,Salt Lake City,UT,84119,7,,,,,,,,
-267,9876 S 1234 W,Salt Lake City,UT,84106,20,,,,,,,,
-268,3435 Poplar Ave,Salt Lake City,UT,84106,10,,,,,,,,
-269,3365 S 900 W,Salt Lake City,UT,84119,6,,,,,,,,
-270,1234 W 4567 S,Salt Lake City,UT,84115,5,,,,,,,,
-271,9876 N 4321 E,Salt Lake City,UT,84111,2,,,,,,,,
-272,233 Canyon Rd,Salt Lake City,UT,84103,15,,,,,,,,
-273,3333 E 4444 S,Salt Lake City,UT,84103,4,,,,,,,,
-274,8687 Forestwood Ave,Salt Lake City,UT,84103,8,,,,,,,,
-275,2223 Walnut Ave,Salt Lake City,UT,84119,18,,,,,,,,
-276,7475 Cypresswood Ave,Salt Lake City,UT,84106,40,,,,,,,,
-277,9293 Oakwoodcrest St,Salt Lake City,UT,84106,15,,,,,,,,
-278,8889 Willowcrestwood St,Salt Lake City,UT,84117,10,,,,,,,,
-279,9495 Meadowbrookwood Ave,Salt Lake City,UT,84106,21,,,,,,,,
-280,1415 Cedar Ave,Salt Lake City,UT,84115,15,,,,,,,,
-281,4300 S 1300 E,Millcreek,UT,84117,10,,,,,,,,
-282,3233 Magnolia St,Salt Lake City,UT,84119,18,,,,,,,,
-283,7677 Juniperwood St,Salt Lake City,UT,84106,3,,,,,,,,
-284,600 E 900 South,Salt Lake City,UT,84105,3,,,,,,,,
-285,789 Oak St,Salt Lake City,UT,84106,20,,,,,,,,
-286,7273 Poplarwood St,Salt Lake City,UT,84105,5,,,,,,,,
-287,456 Elm St,Salt Lake City,UT,84115,3,,,,,,,,
-288,2425 Chestnut St,Salt Lake City,UT,84115,2,,,,,,,,
-289,1060 Dalton Ave S,Salt Lake City,UT,84104,30,,,,,,,,
-290,5025 State St,Murray,UT,84107,12,,,,,,,,
-291,8485 Pinehurstwood St,Salt Lake City,UT,84115,12,,,,,,,,
-292,456 Elm St,Salt Lake City,UT,84115,24,,,,,,,,
-293,1415 Cedar Ave,Salt Lake City,UT,84115,6,,,,,,,,
-294,1819 Willow Ave,Salt Lake City,UT,84111,4,,,,,,,,
-295,7777 S 4444 W,Salt Lake City,UT,84115,8,,,,,,,,
-296,9293 Oakwoodcrest St,Salt Lake City,UT,84106,3,,,,,,,,
-297,1111 W 2222 N,Salt Lake City,UT,84106,8,,,,,,,,
-298,9697 Cedarwoodcrest St,Salt Lake City,UT,84119,28,,,,,,,,
-299,8081 Redwoodwood St,Salt Lake City,UT,84103,6,,,,,,,,
-300,4580 S 2300 E,Holladay,UT,84117,5,,,,,,,,
-301,600 E 900 South,Salt Lake City,UT,84105,20,,,,,,,,
-302,4321 N 8765 E,Salt Lake City,UT,84119,12,,,,,,,,
-303,2425 Chestnut St,Salt Lake City,UT,84115,5,,,,,,,,
-304,4444 N 5555 E,Salt Lake City,UT,84104,9,,,,,,,,
-305,1213 Pine St,Salt Lake City,UT,84115,2,,,,,,,,
-306,8889 Willowcrestwood St,Salt Lake City,UT,84117,28,,,,,,,,
-307,2835 Main St,Salt Lake City,UT,84115,10,,,,,,,,
-308,1001 Walnutwoodcrest St,Salt Lake City,UT,84103,5,,,,,,,,
-309,1819 Willow Ave,Salt Lake City,UT,84111,30,,,,,,,,
-310,7677 Juniperwood St,Salt Lake City,UT,84106,32,,,,,,,,
-311,4444 N 5555 E,Salt Lake City,UT,84104,3,,,,,,,,
-312,7677 Juniperwood St,Salt Lake City,UT,84106,30,,,,,,,,
-313,8889 Willowcrestwood St,Salt Lake City,UT,84117,3,,,,,,,,
-314,4647 Pinehurst Ave,Salt Lake City,UT,84118,5,,,,,,,,
-315,2530 S 500 E,Salt Lake City,UT,84106,2,,,,,,,,
-316,1234 W 4567 S,Salt Lake City,UT,84115,5,,,,,,,,
-317,2021 Spruce St,Salt Lake City,UT,84103,3,,,,,,,,
-318,456 Elm St,Salt Lake City,UT,84115,16,,,,,,,,
-319,3637 Cypress St,Salt Lake City,UT,84115,40,,,,,,,,
-320,3060 Lester St,West Valley City,UT,84119,1,,,,,,,,
-321,4647 Pinehurst Ave,Salt Lake City,UT,84118,8,,,,,,,,
-322,9495 Meadowbrookwood Ave,Salt Lake City,UT,84106,3,,,,,,,,
-323,7071 Magnoliawood Ave,Salt Lake City,UT,84119,35,,,,,,,,
-324,5253 Greenbriar St,Salt Lake City,UT,84119,2,,,,,,,,
-325,6061 Maplewood St,Salt Lake City,UT,84123,4,,,,,,,,
-326,3148 S 1100 W,Salt Lake City,UT,84119,20,,,,,,,,
-327,5555 N 6666 E,Salt Lake City,UT,84119,25,,,,,,,,
-328,5657 Meadowbrook St,Salt Lake City,UT,84115,6,,,,,,,,
-329,1330 2100 S,Salt Lake City,UT,84106,15,,,,,,,,
-330,8485 Pinehurstwood St,Salt Lake City,UT,84115,10,,,,,,,,
-331,4300 S 1300 E,Millcreek,UT,84117,8,,,,,,,,
-332,3435 Poplar Ave,Salt Lake City,UT,84106,4,,,,,,,,
-333,7273 Poplarwood St,Salt Lake City,UT,84105,15,,,,,,,,
-334,600 E 900 South,Salt Lake City,UT,84105,25,,,,,,,,
-335,3575 W Valley Central Station bus Loop,West Valley City,UT,84119,21,,,,,,,,
-336,410 S State St,Salt Lake City,UT,84111,15,,,,,,,,
-337,789 Oak St,Salt Lake City,UT,84106,30,,,,,,,,
-338,5383 South 900 East #104,Salt Lake City,UT,84117,4,,,,,,,,
-339,8888 S 9999 W,Salt Lake City,UT,84111,8,,,,,,,,
-340,3031 Sycamore Ave,Salt Lake City,UT,84111,10,,,,,,,,
-341,7475 Cypresswood Ave,Salt Lake City,UT,84106,25,,,,,,,,
-342,5253 Greenbriar St,Salt Lake City,UT,84119,7,,,,,,,,
-343,8687 Forestwood Ave,Salt Lake City,UT,84103,18,,,,,,,,
-344,1415 Cedar Ave,Salt Lake City,UT,84115,20,,,,,,,,
-345,4647 Pinehurst Ave,Salt Lake City,UT,84118,15,,,,,,,,
-346,4647 Pinehurst Ave,Salt Lake City,UT,84118,9,,,,,,,,
-347,4300 S 1300 E,Millcreek,UT,84117,16,,,,,,,,
-348,2223 Walnut Ave,Salt Lake City,UT,84119,4,,,,,,,,
-349,6666 E 7777 N,Salt Lake City,UT,84119,4,,,,,,,,
-350,8889 Willowcrestwood St,Salt Lake City,UT,84117,35,,,,,,,,
-351,4580 S 2300 E,Holladay,UT,84117,12,,,,,,,,
-352,7071 Magnoliawood Ave,Salt Lake City,UT,84119,15,,,,,,,,
-353,5555 W 2222 S,Salt Lake City,UT,84104,7,,,,,,,,
-354,2222 S 3333 W,Salt Lake City,UT,84117,7,,,,,,,,
-355,600 E 900 South,Salt Lake City,UT,84105,24,,,,,,,,
-356,4321 N 8765 E,Salt Lake City,UT,84119,12,,,,,,,,
-357,5859 Cedarwood Ave,Salt Lake City,UT,84115,40,,,,,,,,
-358,1021 Birchwoodcrest Ave,Salt Lake City,UT,84104,20,,,,,,,,
-359,8687 Forestwood Ave,Salt Lake City,UT,84103,3,,,,,,,,
-360,4849 Forest St,Salt Lake City,UT,84111,4,,,,,,,,
-361,8889 Willowcrestwood St,Salt Lake City,UT,84117,35,,,,,,,,
-362,7777 E 3333 N,Salt Lake City,UT,84119,28,,,,,,,,
-363,6666 E 7777 N,Salt Lake City,UT,84119,6,,,,,,,,
-364,1234 W 4567 S,Salt Lake City,UT,84115,8,,,,,,,,
-365,2600 Taylorsville Blvd,Salt Lake City,UT,84118,7,,,,,,,,
-366,4041 Laurel St,Salt Lake City,UT,84117,20,,,,,,,,
-367,4647 Pinehurst Ave,Salt Lake City,UT,84118,12,,,,,,,,
-368,4580 S 2300 E,Holladay,UT,84117,6,,,,,,,,
-369,3839 Juniper Ave,Salt Lake City,UT,84117,6,,,,,,,,
-370,4580 S 2300 E,Holladay,UT,84117,15,,,,,,,,
-371,5555 N 6666 E,Salt Lake City,UT,84119,16,,,,,,,,
-372,6061 Maplewood St,Salt Lake City,UT,84123,6,,,,,,,,
-373,2468 E 7531 N,Salt Lake City,UT,84117,10,,,,,,,,
-374,8888 S 9999 W,Salt Lake City,UT,84111,24,,,,,,,,
-375,3365 S 900 W,Salt Lake City,UT,84119,2,,,,,,,,
-376,3575 W Valley Central Station bus Loop,West Valley City,UT,84119,12,,,,,,,,
-377,7777 E 3333 N,Salt Lake City,UT,84119,9,,,,,,,,
-378,2627 Ash Ave,Salt Lake City,UT,84115,6,,,,,,,,
-379,9293 Oakwoodcrest St,Salt Lake City,UT,84106,8,,,,,,,,
-380,3060 Lester St,West Valley City,UT,84119,12,,,,,,,,
-381,5859 Cedarwood Ave,Salt Lake City,UT,84115,12,,,,,,,,
-382,3148 S 1100 W,Salt Lake City,UT,84119,24,,,,,,,,
-383,6351 South 900 East,Murray,UT,84121,20,,,,,,,,
-384,1819 Willow Ave,Salt Lake City,UT,84111,16,,,,,,,,
-385,3575 W Valley Central Station bus Loop,West Valley City,UT,84119,20,,,,,,,,
-386,7677 Juniperwood St,Salt Lake City,UT,84106,8,,,,,,,,
-387,4580 S 2300 E,Holladay,UT,84117,3,,,,,,,,
-388,6666 E 7777 N,Salt Lake City,UT,84119,8,,,,,,,,
-389,4647 Pinehurst Ave,Salt Lake City,UT,84118,15,,,,,,,,
-390,3148 S 1100 W,Salt Lake City,UT,84119,16,,,,,,,,
-391,5555 W 2222 S,Salt Lake City,UT,84104,6,,,,,,,,
-392,5555 W 2222 S,Salt Lake City,UT,84104,10,,,,,,,,
-393,5051 Willowcrest Ave,Salt Lake City,UT,84104,8,,,,,,,,
-394,5555 N 6666 E,Salt Lake City,UT,84119,16,,,,,,,,
-395,8889 Willowcrestwood St,Salt Lake City,UT,84117,1,,,,,,,,
-396,1011 Maple Ave,Salt Lake City,UT,84104,9,,,,,,,,
-397,1011 Maple Ave,Salt Lake City,UT,84104,2,,,,,,,,
-398,4444 N 5555 E,Salt Lake City,UT,84104,9,,,,,,,,
-399,2222 S 3333 W,Salt Lake City,UT,84117,5,,,,,,,,
-400,3839 Juniper Ave,Salt Lake City,UT,84117,7,,,,,,,,
-401,6666 E 7777 N,Salt Lake City,UT,84119,6,,,,,,,,
-402,8283 Sequoiawood Ave,Salt Lake City,UT,84104,40,,,,,,,,
-403,7071 Magnoliawood Ave,Salt Lake City,UT,84119,16,,,,,,,,
-404,9876 N 4321 E,Salt Lake City,UT,84111,14,,,,,,,,
-405,300 State St,Salt Lake City,UT,84103,25,,,,,,,,
-406,5555 E 8888 N,Salt Lake City,UT,84115,21,,,,,,,,
-407,7475 Cypresswood Ave,Salt Lake City,UT,84106,8,,,,,,,,
-408,2468 W 3579 S,Salt Lake City,UT,84104,6,,,,,,,,
-409,789 Oak St,Salt Lake City,UT,84106,12,,,,,,,,
-410,7071 Magnoliawood Ave,Salt Lake City,UT,84119,4,,,,,,,,
-411,4580 S 2300 E,Holladay,UT,84117,15,,,,,,,,
-412,5025 State St,Murray,UT,84107,12,,,,,,,,
-413,2223 Walnut Ave,Salt Lake City,UT,84119,3,,,,,,,,
-414,5555 N 9999 E,Salt Lake City,UT,84119,2,,,,,,,,
-415,2468 S 1357 W,Salt Lake City,UT,84103,15,,,,,,,,
-416,6667 Sprucewood Ave,Salt Lake City,UT,84104,8,,,,,,,,
-417,7677 Juniperwood St,Salt Lake City,UT,84106,3,,,,,,,,
-418,7777 E 3333 N,Salt Lake City,UT,84119,2,,,,,,,,
-419,3365 S 900 W,Salt Lake City,UT,84119,18,,,,,,,,
-420,1330 2100 S,Salt Lake City,UT,84106,20,,,,,,,,
-421,1415 Cedar Ave,Salt Lake City,UT,84115,7,,,,,,,,
-422,9876 S 1234 W,Salt Lake City,UT,84106,14,,,,,,,,
-423,4444 N 5555 E,Salt Lake City,UT,84104,10,,,,,,,,
-424,4041 Laurel St,Salt Lake City,UT,84117,18,,,,,,,,
-425,1234 W 4567 S,Salt Lake City,UT,84115,30,,,,,,,,
-426,123 Main St,Salt Lake City,UT,84118,2,,,,,,,,
-427,2468 S 1357 W,Salt Lake City,UT,84103,6,,,,,,,,
-428,5383 South 900 East #104,Salt Lake City,UT,84117,20,,,,,,,,
-429,8485 Pinehurstwood St,Salt Lake City,UT,84115,8,,,,,,,,
-430,1111 W 2222 N,Salt Lake City,UT,84106,5,,,,,,,,
-431,9876 S 1234 W,Salt Lake City,UT,84106,12,,,,,,,,
-432,5555 W 2222 S,Salt Lake City,UT,84104,6,,,,,,,,
-433,5555 N 6666 E,Salt Lake City,UT,84119,8,,,,,,,,
-434,8888 S 9999 W,Salt Lake City,UT,84111,2,,,,,,,,
-435,9999 E 1111 N,Salt Lake City,UT,84106,10,,,,,,,,
-436,5657 Meadowbrook St,Salt Lake City,UT,84115,10,,,,,,,,
-437,9876 N 4321 E,Salt Lake City,UT,84111,10,,,,,,,,
-438,4445 Sequoia St,Salt Lake City,UT,84106,21,,,,,,,,
-439,789 Oak St,Salt Lake City,UT,84106,28,,,,,,,,
-440,7777 W 8888 S,Salt Lake City,UT,84119,4,,,,,,,,
-441,9876 N 4321 E,Salt Lake City,UT,84111,25,,,,,,,,
-442,9876 N 4321 E,Salt Lake City,UT,84111,2,,,,,,,,
-443,380 W 2880 S,Salt Lake City,UT,84115,20,,,,,,,,
-444,380 W 2880 S,Salt Lake City,UT,84115,10,,,,,,,,
-445,1234 S 6543 W,Salt Lake City,UT,84111,5,,,,,,,,
-446,3333 E 4444 S,Salt Lake City,UT,84103,2,,,,,,,,
-447,5859 Cedarwood Ave,Salt Lake City,UT,84115,10,,,,,,,,
-448,1111 W 2222 N,Salt Lake City,UT,84106,2,,,,,,,,
-449,2530 S 500 E,Salt Lake City,UT,84106,6,,,,,,,,
-450,1488 4800 S,Salt Lake City,UT,84123,18,,,,,,,,
-451,600 E 900 South,Salt Lake City,UT,84105,25,,,,,,,,
-452,177 W Price Ave,Salt Lake City,UT,84115,12,,,,,,,,
-453,9091 Greenbriarwood Ave,Salt Lake City,UT,84117,6,,,,,,,,
-454,3839 Juniper Ave,Salt Lake City,UT,84117,30,,,,,,,,
-455,1819 Willow Ave,Salt Lake City,UT,84111,12,,,,,,,,
-456,8081 Redwoodwood St,Salt Lake City,UT,84103,2,,,,,,,,
-457,1213 Pine St,Salt Lake City,UT,84115,25,,,,,,,,
-458,8081 Redwoodwood St,Salt Lake City,UT,84103,20,,,,,,,,
-459,7071 Magnoliawood Ave,Salt Lake City,UT,84119,18,,,,,,,,
-460,3435 Poplar Ave,Salt Lake City,UT,84106,2,,,,,,,,
-461,6465 Birchwood St,Salt Lake City,UT,84115,40,,,,,,,,
-462,3839 Juniper Ave,Salt Lake City,UT,84117,6,,,,,,,,
-463,5455 Oakwood Ave,Salt Lake City,UT,84119,8,,,,,,,,
-464,233 Canyon Rd,Salt Lake City,UT,84103,16,,,,,,,,
-465,3333 E 4444 S,Salt Lake City,UT,84103,12,,,,,,,,
-466,2010 W 500 S,Salt Lake City,UT,84104,8,,,,,,,,
-467,3333 E 4444 S,Salt Lake City,UT,84103,5,,,,,,,,
-468,5100 South 2700 West,Salt Lake City,UT,84118,24,,,,,,,,
-469,3839 Juniper Ave,Salt Lake City,UT,84117,2,,,,,,,,
-470,6061 Maplewood St,Salt Lake City,UT,84123,35,,,,,,,,
-471,7777 W 8888 S,Salt Lake City,UT,84119,24,,,,,,,,
-472,3333 E 4444 S,Salt Lake City,UT,84103,30,,,,,,,,
-473,123 Main St,Salt Lake City,UT,84118,3,,,,,,,,
-474,5455 Oakwood Ave,Salt Lake City,UT,84119,6,,,,,,,,
-475,1488 4800 S,Salt Lake City,UT,84123,3,,,,,,,,
-476,1234 S 6543 W,Salt Lake City,UT,84111,6,,,,,,,,
-477,2468 E 7531 N,Salt Lake City,UT,84117,25,,,,,,,,
-478,1330 2100 S,Salt Lake City,UT,84106,12,,,,,,,,
-479,4300 S 1300 E,Millcreek,UT,84117,12,,,,,,,,
-480,7475 Cypresswood Ave,Salt Lake City,UT,84106,40,,,,,,,,
-481,2468 S 1357 W,Salt Lake City,UT,84103,20,,,,,,,,
-482,195 W Oakland Ave,Salt Lake City,UT,84115,3,,,,,,,,
-483,3575 W Valley Central Station bus Loop,West Valley City,UT,84119,2,,,,,,,,
-484,8888 S 9999 W,Salt Lake City,UT,84111,21,,,,,,,,
-485,4321 N 8765 E,Salt Lake City,UT,84119,35,,,,,,,,
-486,1060 Dalton Ave S,Salt Lake City,UT,84104,9,,,,,,,,
-487,4445 Sequoia St,Salt Lake City,UT,84106,3,,,,,,,,
-488,2600 Taylorsville Blvd,Salt Lake City,UT,84118,4,,,,,,,,
-489,1001 Walnutwoodcrest St,Salt Lake City,UT,84103,12,,,,,,,,
-490,2835 Main St,Salt Lake City,UT,84115,18,,,,,,,,
-491,2468 E 7531 N,Salt Lake City,UT,84117,20,,,,,,,,
-492,6465 Birchwood St,Salt Lake City,UT,84115,4,,,,,,,,
-493,7677 Juniperwood St,Salt Lake City,UT,84106,4,,,,,,,,
-494,6465 Birchwood St,Salt Lake City,UT,84115,10,,,,,,,,
-495,9899 Maplewoodcrest Ave,Salt Lake City,UT,84115,20,,,,,,,,
-496,1819 Willow Ave,Salt Lake City,UT,84111,25,,,,,,,,
-497,3148 S 1100 W,Salt Lake City,UT,84119,1,,,,,,,,
-498,7777 E 3333 N,Salt Lake City,UT,84119,8,,,,,,,,
-499,2021 Spruce St,Salt Lake City,UT,84103,40,,,,,,,,
-500,3148 S 1100 W,Salt Lake City,UT,84119,10,,,,,,,,
-501,5383 South 900 East #104,Salt Lake City,UT,84117,9,,,,,,,,
-502,2530 S 500 E,Salt Lake City,UT,84106,20,,,,,,,,
-503,4321 N 8765 E,Salt Lake City,UT,84119,32,,,,,,,,
+package_id, address, city, state, zip, weight
+1,195 W Oakland Ave,Salt Lake City,UT,84115,21
+2,2530 S 500 E,Salt Lake City,UT,84106,44
+3,233 Canyon Rd,Salt Lake City,UT,84103,2
+4,380 W 2880 S,Salt Lake City,UT,84115,4
+5,410 S State St,Salt Lake City,UT,84111,5
+6,3060 Lester St,West Valley City,UT,84119,88
+7,1330 2100 S,Salt Lake City,UT,84106,8
+8,300 State St,Salt Lake City,UT,84103,9
+9,300 State St,Salt Lake City,UT,84103,2
+10,600 E 900 South,Salt Lake City,UT,84105,1
+11,2600 Taylorsville Blvd,Salt Lake City,UT,84118,1
+12,3575 W Valley Central Station bus Loop,West Valley City,UT,84119,1
+13,2010 W 500 S,Salt Lake City,UT,84104,2
+14,4300 S 1300 E,Millcreek,UT,84117,88
+15,4580 S 2300 E,Holladay,UT,84117,4
+16,4580 S 2300 E,Holladay,UT,84117,88
+17,3148 S 1100 W,Salt Lake City,UT,84119,2
+18,1488 4800 S,Salt Lake City,UT,84123,6
+19,177 W Price Ave,Salt Lake City,UT,84115,37
+20,3595 Main St,Salt Lake City,UT,84115,37
+21,3595 Main St,Salt Lake City,UT,84115,3
+22,6351 South 900 East,Murray,UT,84121,2
+23,5100 South 2700 West,Salt Lake City,UT,84118,5
+24,5025 State St,Murray,UT,84107,7
+25,5383 South 900 East #104,Salt Lake City,UT,84117,7
+26,5383 South 900 East #104,Salt Lake City,UT,84117,25
+27,1060 Dalton Ave S,Salt Lake City,UT,84104,5
+28,2835 Main St,Salt Lake City,UT,84115,7
+29,1330 2100 S,Salt Lake City,UT,84106,2
+30,300 State St,Salt Lake City,UT,84103,1
+31,3365 S 900 W,Salt Lake City,UT,84119,1
+32,3365 S 900 W,Salt Lake City,UT,84119,1
+33,2530 S 500 E,Salt Lake City,UT,84106,1
+34,4580 S 2300 E,Holladay,UT,84117,2
+35,1060 Dalton Ave S,Salt Lake City,UT,84104,88
+36,2300 Parkway Blvd,West Valley City,UT,84119,88
+37,410 S State St,Salt Lake City,UT,84111,2
+38,410 S State St,Salt Lake City,UT,84111,9
+39,2010 W 500 S,Salt Lake City,UT,84104,9
+40,380 W 2880 S,Salt Lake City,UT,84115,45
+41,1234 W 4567 S,Salt Lake City,UT,84115,43
+42,9876 E 5432 N,Salt Lake City,UT,84106,18
+43,2468 S 1357 W,Salt Lake City,UT,84103,31
+44,5555 N 9999 E,Salt Lake City,UT,84119,59
+45,4321 N 8765 E,Salt Lake City,UT,84119,28
+46,9876 S 1234 W,Salt Lake City,UT,84106,33
+47,2468 E 7531 N,Salt Lake City,UT,84117,18
+48,5555 W 2222 S,Salt Lake City,UT,84104,33
+49,7777 E 3333 N,Salt Lake City,UT,84119,10
+50,1234 S 6543 W,Salt Lake City,UT,84111,9
+51,9876 N 4321 E,Salt Lake City,UT,84111,44
+52,2468 W 3579 S,Salt Lake City,UT,84104,54
+53,5555 E 8888 N,Salt Lake City,UT,84115,36
+54,7777 S 4444 W,Salt Lake City,UT,84115,52
+55,1111 W 2222 N,Salt Lake City,UT,84106,35
+56,3333 E 4444 S,Salt Lake City,UT,84103,15
+57,5555 N 6666 E,Salt Lake City,UT,84119,21
+58,7777 W 8888 S,Salt Lake City,UT,84119,24
+59,9999 E 1111 N,Salt Lake City,UT,84106,25
+60,2222 S 3333 W,Salt Lake City,UT,84117,10
+61,4444 N 5555 E,Salt Lake City,UT,84104,36
+62,6666 E 7777 N,Salt Lake City,UT,84119,42
+63,8888 S 9999 W,Salt Lake City,UT,84111,53
+64,2468 W 3579 S,Salt Lake City,UT,84104,7
+65,2530 S 500 E,Salt Lake City,UT,84106,12
+66,5383 South 900 East #104,Salt Lake City,UT,84117,1
+67,2530 S 500 E,Salt Lake City,UT,84106,1
+68,7777 E 3333 N,Salt Lake City,UT,84119,14
+69,2468 E 7531 N,Salt Lake City,UT,84117,9
+70,3365 S 900 W,Salt Lake City,UT,84119,15
+71,2222 S 3333 W,Salt Lake City,UT,84117,8
+72,2600 Taylorsville Blvd,Salt Lake City,UT,84118,15
+73,4580 S 2300 E,Holladay,UT,84117,10
+74,3333 E 4444 S,Salt Lake City,UT,84103,10
+75,1234 W 4567 S,Salt Lake City,UT,84115,3
+76,300 State St,Salt Lake City,UT,84103,7
+77,4321 N 8765 E,Salt Lake City,UT,84119,11
+78,5383 South 900 East #104,Salt Lake City,UT,84117,13
+79,177 W Price Ave,Salt Lake City,UT,84115,4
+80,4321 N 8765 E,Salt Lake City,UT,84119,11
+81,8888 S 9999 W,Salt Lake City,UT,84111,7
+82,4444 N 5555 E,Salt Lake City,UT,84104,7
+83,9876 S 1234 W,Salt Lake City,UT,84106,14
+84,5383 South 900 East #104,Salt Lake City,UT,84117,7
+85,3365 S 900 W,Salt Lake City,UT,84119,4
+86,600 E 900 South,Salt Lake City,UT,84105,1
+87,2530 S 500 E,Salt Lake City,UT,84106,12
+88,2300 Parkway Blvd,West Valley City,UT,84119,2
+89,4444 N 5555 E,Salt Lake City,UT,84104,7
+90,5555 N 9999 E,Salt Lake City,UT,84119,4
+91,1060 Dalton Ave S,Salt Lake City,UT,84104,15
+92,3595 Main St,Salt Lake City,UT,84115,7
+93,5383 South 900 East #104,Salt Lake City,UT,84117,10
+94,4300 S 1300 E,Millcreek,UT,84117,14
+95,9876 E 5432 N,Salt Lake City,UT,84106,14
+96,4300 S 1300 E,Millcreek,UT,84117,10
+97,3595 Main St,Salt Lake City,UT,84115,5
+98,3595 Main St,Salt Lake City,UT,84115,15
+99,380 W 2880 S,Salt Lake City,UT,84115,7
+100,7777 W 8888 S,Salt Lake City,UT,84119,5
+101,410 S State St,Salt Lake City,UT,84111,5
+102,3333 E 4444 S,Salt Lake City,UT,84103,7
+103,7777 W 8888 S,Salt Lake City,UT,84119,8
+104,177 W Price Ave,Salt Lake City,UT,84115,14
+105,410 S State St,Salt Lake City,UT,84111,1
+106,380 W 2880 S,Salt Lake City,UT,84115,3
+107,4444 N 5555 E,Salt Lake City,UT,84104,6
+108,5100 South 2700 West,Salt Lake City,UT,84118,3
+109,5555 N 6666 E,Salt Lake City,UT,84119,5
+110,2010 W 500 S,Salt Lake City,UT,84104,8
+111,2530 S 500 E,Salt Lake City,UT,84106,6
+112,4580 S 2300 E,Holladay,UT,84117,15
+113,3148 S 1100 W,Salt Lake City,UT,84119,3
+114,4444 N 5555 E,Salt Lake City,UT,84104,4
+115,4300 S 1300 E,Millcreek,UT,84117,11
+116,410 S State St,Salt Lake City,UT,84111,9
+117,3595 Main St,Salt Lake City,UT,84115,1
+118,300 State St,Salt Lake City,UT,84103,4
+119,5555 N 6666 E,Salt Lake City,UT,84119,12
+120,300 State St,Salt Lake City,UT,84103,5
+121,2835 Main St,Salt Lake City,UT,84115,9
+122,7777 S 4444 W,Salt Lake City,UT,84115,2
+123,410 S State St,Salt Lake City,UT,84111,4
+124,1330 2100 S,Salt Lake City,UT,84106,2
+125,4321 N 8765 E,Salt Lake City,UT,84119,2
+126,2300 Parkway Blvd,West Valley City,UT,84119,3
+127,7777 W 8888 S,Salt Lake City,UT,84119,13
+128,1234 S 6543 W,Salt Lake City,UT,84111,14
+129,5555 W 2222 S,Salt Lake City,UT,84104,13
+130,1488 4800 S,Salt Lake City,UT,84123,13
+131,2530 S 500 E,Salt Lake City,UT,84106,9
+132,410 S State St,Salt Lake City,UT,84111,9
+133,195 W Oakland Ave,Salt Lake City,UT,84115,10
+134,4321 N 8765 E,Salt Lake City,UT,84119,9
+135,5383 South 900 East #104,Salt Lake City,UT,84117,3
+136,5025 State St,Murray,UT,84107,8
+137,3148 S 1100 W,Salt Lake City,UT,84119,10
+138,5383 South 900 East #104,Salt Lake City,UT,84117,8
+139,2010 W 500 S,Salt Lake City,UT,84104,3
+140,4580 S 2300 E,Holladay,UT,84117,6
+141,3333 E 4444 S,Salt Lake City,UT,84103,9
+142,3060 Lester St,West Valley City,UT,84119,8
+143,9876 N 4321 E,Salt Lake City,UT,84111,8
+144,9876 S 1234 W,Salt Lake City,UT,84106,12
+145,4300 S 1300 E,Millcreek,UT,84117,6
+146,233 Canyon Rd,Salt Lake City,UT,84103,15
+147,4580 S 2300 E,Holladay,UT,84117,14
+148,6666 E 7777 N,Salt Lake City,UT,84119,5
+149,3595 Main St,Salt Lake City,UT,84115,15
+150,5100 South 2700 West,Salt Lake City,UT,84118,13
+151,195 W Oakland Ave,Salt Lake City,UT,84115,15
+152,1330 2100 S,Salt Lake City,UT,84106,5
+153,1060 Dalton Ave S,Salt Lake City,UT,84104,4
+154,380 W 2880 S,Salt Lake City,UT,84115,13
+155,380 W 2880 S,Salt Lake City,UT,84115,7
+156,4300 S 1300 E,Millcreek,UT,84117,15
+157,410 S State St,Salt Lake City,UT,84111,3
+158,300 State St,Salt Lake City,UT,84103,14
+159,3365 S 900 W,Salt Lake City,UT,84119,3
+160,195 W Oakland Ave,Salt Lake City,UT,84115,11
+161,1234 W 4567 S,Salt Lake City,UT,84115,2
+162,7777 E 3333 N,Salt Lake City,UT,84119,7
+163,9876 N 4321 E,Salt Lake City,UT,84111,6
+164,3060 Lester St,West Valley City,UT,84119,11
+165,9876 E 5432 N,Salt Lake City,UT,84106,10
+166,380 W 2880 S,Salt Lake City,UT,84115,1
+167,2468 E 7531 N,Salt Lake City,UT,84117,2
+168,5383 South 900 East #104,Salt Lake City,UT,84117,11
+169,5555 N 6666 E,Salt Lake City,UT,84119,8
+170,1111 W 2222 N,Salt Lake City,UT,84106,2
+171,2600 Taylorsville Blvd,Salt Lake City,UT,84118,15
+172,410 S State St,Salt Lake City,UT,84111,4
+173,2010 W 500 S,Salt Lake City,UT,84104,5
+174,2300 Parkway Blvd,West Valley City,UT,84119,11
+175,5555 N 6666 E,Salt Lake City,UT,84119,10
+176,3595 Main St,Salt Lake City,UT,84115,3
+177,195 W Oakland Ave,Salt Lake City,UT,84115,4
+178,1488 4800 S,Salt Lake City,UT,84123,3
+179,4580 S 2300 E,Holladay,UT,84117,12
+180,177 W Price Ave,Salt Lake City,UT,84115,2
+181,2010 W 500 S,Salt Lake City,UT,84104,1
+182,380 W 2880 S,Salt Lake City,UT,84115,12
+183,5555 N 9999 E,Salt Lake City,UT,84119,2
+184,600 E 900 South,Salt Lake City,UT,84105,6
+185,1330 2100 S,Salt Lake City,UT,84106,7
+186,1330 2100 S,Salt Lake City,UT,84106,6
+187,5100 South 2700 West,Salt Lake City,UT,84118,2
+188,300 State St,Salt Lake City,UT,84103,15
+189,4444 N 5555 E,Salt Lake City,UT,84104,1
+190,3595 Main St,Salt Lake City,UT,84115,7
+191,300 State St,Salt Lake City,UT,84103,2
+192,4580 S 2300 E,Holladay,UT,84117,15
+193,4580 S 2300 E,Holladay,UT,84117,9
+194,9876 S 1234 W,Salt Lake City,UT,84106,11
+195,2530 S 500 E,Salt Lake City,UT,84106,6
+196,6666 E 7777 N,Salt Lake City,UT,84119,5
+197,7777 S 4444 W,Salt Lake City,UT,84115,11
+198,300 State St,Salt Lake City,UT,84103,3
+199,2010 W 500 S,Salt Lake City,UT,84104,15
+200,2010 W 500 S,Salt Lake City,UT,84104,12
+201,123 Main St,Salt Lake City,UT,84118,35
+202,456 Elm St,Salt Lake City,UT,84115,14
+203,789 Oak St,Salt Lake City,UT,84106,3
+204,1011 Maple Ave,Salt Lake City,UT,84104,40
+205,1213 Pine St,Salt Lake City,UT,84115,14
+206,1415 Cedar Ave,Salt Lake City,UT,84115,7
+207,1617 Birch St,Salt Lake City,UT,84117,32
+208,1819 Willow Ave,Salt Lake City,UT,84111,15
+209,2021 Spruce St,Salt Lake City,UT,84103,15
+210,2223 Walnut Ave,Salt Lake City,UT,84119,30
+211,2425 Chestnut St,Salt Lake City,UT,84115,8
+212,2627 Ash Ave,Salt Lake City,UT,84115,20
+213,2829 Beech St,Salt Lake City,UT,84119,8
+214,3031 Sycamore Ave,Salt Lake City,UT,84111,3
+215,3233 Magnolia St,Salt Lake City,UT,84119,12
+216,3435 Poplar Ave,Salt Lake City,UT,84106,5
+217,3637 Cypress St,Salt Lake City,UT,84115,10
+218,3839 Juniper Ave,Salt Lake City,UT,84117,5
+219,4041 Laurel St,Salt Lake City,UT,84117,8
+220,4243 Redwood Ave,Salt Lake City,UT,84119,12
+221,4445 Sequoia St,Salt Lake City,UT,84106,16
+222,4647 Pinehurst Ave,Salt Lake City,UT,84118,35
+223,4849 Forest St,Salt Lake City,UT,84111,30
+224,5051 Willowcrest Ave,Salt Lake City,UT,84104,40
+225,5253 Greenbriar St,Salt Lake City,UT,84119,3
+226,5455 Oakwood Ave,Salt Lake City,UT,84119,24
+227,5657 Meadowbrook St,Salt Lake City,UT,84115,12
+228,5859 Cedarwood Ave,Salt Lake City,UT,84115,4
+229,6061 Maplewood St,Salt Lake City,UT,84123,1
+230,6263 Walnutwood Ave,Salt Lake City,UT,84117,5
+231,6465 Birchwood St,Salt Lake City,UT,84115,21
+232,6667 Sprucewood Ave,Salt Lake City,UT,84104,20
+233,6869 Sycamorewood St,Salt Lake City,UT,84115,20
+234,7071 Magnoliawood Ave,Salt Lake City,UT,84119,6
+235,7273 Poplarwood St,Salt Lake City,UT,84105,25
+236,7475 Cypresswood Ave,Salt Lake City,UT,84106,16
+237,7677 Juniperwood St,Salt Lake City,UT,84106,14
+238,7879 Laurelwood Ave,Salt Lake City,UT,84118,12
+239,8081 Redwoodwood St,Salt Lake City,UT,84103,16
+240,8283 Sequoiawood Ave,Salt Lake City,UT,84104,24
+241,8485 Pinehurstwood St,Salt Lake City,UT,84115,32
+242,8687 Forestwood Ave,Salt Lake City,UT,84103,4
+243,8889 Willowcrestwood St,Salt Lake City,UT,84117,25
+244,9091 Greenbriarwood Ave,Salt Lake City,UT,84117,16
+245,9293 Oakwoodcrest St,Salt Lake City,UT,84106,5
+246,9495 Meadowbrookwood Ave,Salt Lake City,UT,84106,8
+247,9697 Cedarwoodcrest St,Salt Lake City,UT,84119,40
+248,9899 Maplewoodcrest Ave,Salt Lake City,UT,84115,1
+249,1001 Walnutwoodcrest St,Salt Lake City,UT,84103,12
+250,1021 Birchwoodcrest Ave,Salt Lake City,UT,84104,15
+251,674 Pennsylvanie St,Salt Lake City,UT,84104,2
+252,8283 Sequoiawood Ave,Salt Lake City,UT,84104,6
+253,8889 Willowcrestwood St,Salt Lake City,UT,84117,15
+254,3365 S 900 W,Salt Lake City,UT,84119,24
+255,3333 E 4444 S,Salt Lake City,UT,84103,12
+256,7677 Juniperwood St,Salt Lake City,UT,84106,7
+257,123 Main St,Salt Lake City,UT,84118,4
+258,2600 Taylorsville Blvd,Salt Lake City,UT,84118,4
+259,7677 Juniperwood St,Salt Lake City,UT,84106,40
+260,3595 Main St,Salt Lake City,UT,84115,24
+261,5025 State St,Murray,UT,84107,4
+262,6061 Maplewood St,Salt Lake City,UT,84123,16
+263,2300 Parkway Blvd,West Valley City,UT,84119,24
+264,1011 Maple Ave,Salt Lake City,UT,84104,24
+265,7777 S 4444 W,Salt Lake City,UT,84115,14
+266,3233 Magnolia St,Salt Lake City,UT,84119,7
+267,9876 S 1234 W,Salt Lake City,UT,84106,20
+268,3435 Poplar Ave,Salt Lake City,UT,84106,10
+269,3365 S 900 W,Salt Lake City,UT,84119,6
+270,1234 W 4567 S,Salt Lake City,UT,84115,5
+271,9876 N 4321 E,Salt Lake City,UT,84111,2
+272,233 Canyon Rd,Salt Lake City,UT,84103,15
+273,3333 E 4444 S,Salt Lake City,UT,84103,4
+274,8687 Forestwood Ave,Salt Lake City,UT,84103,8
+275,2223 Walnut Ave,Salt Lake City,UT,84119,18
+276,7475 Cypresswood Ave,Salt Lake City,UT,84106,40
+277,9293 Oakwoodcrest St,Salt Lake City,UT,84106,15
+278,8889 Willowcrestwood St,Salt Lake City,UT,84117,10
+279,9495 Meadowbrookwood Ave,Salt Lake City,UT,84106,21
+280,1415 Cedar Ave,Salt Lake City,UT,84115,15
+281,4300 S 1300 E,Millcreek,UT,84117,10
+282,3233 Magnolia St,Salt Lake City,UT,84119,18
+283,7677 Juniperwood St,Salt Lake City,UT,84106,3
+284,600 E 900 South,Salt Lake City,UT,84105,3
+285,789 Oak St,Salt Lake City,UT,84106,20
+286,7273 Poplarwood St,Salt Lake City,UT,84105,5
+287,456 Elm St,Salt Lake City,UT,84115,3
+288,2425 Chestnut St,Salt Lake City,UT,84115,2
+289,1060 Dalton Ave S,Salt Lake City,UT,84104,30
+290,5025 State St,Murray,UT,84107,12
+291,8485 Pinehurstwood St,Salt Lake City,UT,84115,12
+292,456 Elm St,Salt Lake City,UT,84115,24
+293,1415 Cedar Ave,Salt Lake City,UT,84115,6
+294,1819 Willow Ave,Salt Lake City,UT,84111,4
+295,7777 S 4444 W,Salt Lake City,UT,84115,8
+296,9293 Oakwoodcrest St,Salt Lake City,UT,84106,3
+297,1111 W 2222 N,Salt Lake City,UT,84106,8
+298,9697 Cedarwoodcrest St,Salt Lake City,UT,84119,28
+299,8081 Redwoodwood St,Salt Lake City,UT,84103,6
+300,4580 S 2300 E,Holladay,UT,84117,5
+301,600 E 900 South,Salt Lake City,UT,84105,20
+302,4321 N 8765 E,Salt Lake City,UT,84119,12
+303,2425 Chestnut St,Salt Lake City,UT,84115,5
+304,4444 N 5555 E,Salt Lake City,UT,84104,9
+305,1213 Pine St,Salt Lake City,UT,84115,2
+306,8889 Willowcrestwood St,Salt Lake City,UT,84117,28
+307,2835 Main St,Salt Lake City,UT,84115,10
+308,1001 Walnutwoodcrest St,Salt Lake City,UT,84103,5
+309,1819 Willow Ave,Salt Lake City,UT,84111,30
+310,7677 Juniperwood St,Salt Lake City,UT,84106,32
+311,4444 N 5555 E,Salt Lake City,UT,84104,3
+312,7677 Juniperwood St,Salt Lake City,UT,84106,30
+313,8889 Willowcrestwood St,Salt Lake City,UT,84117,3
+314,4647 Pinehurst Ave,Salt Lake City,UT,84118,5
+315,2530 S 500 E,Salt Lake City,UT,84106,2
+316,1234 W 4567 S,Salt Lake City,UT,84115,5
+317,2021 Spruce St,Salt Lake City,UT,84103,3
+318,456 Elm St,Salt Lake City,UT,84115,16
+319,3637 Cypress St,Salt Lake City,UT,84115,40
+320,3060 Lester St,West Valley City,UT,84119,1
+321,4647 Pinehurst Ave,Salt Lake City,UT,84118,8
+322,9495 Meadowbrookwood Ave,Salt Lake City,UT,84106,3
+323,7071 Magnoliawood Ave,Salt Lake City,UT,84119,35
+324,5253 Greenbriar St,Salt Lake City,UT,84119,2
+325,6061 Maplewood St,Salt Lake City,UT,84123,4
+326,3148 S 1100 W,Salt Lake City,UT,84119,20
+327,5555 N 6666 E,Salt Lake City,UT,84119,25
+328,5657 Meadowbrook St,Salt Lake City,UT,84115,6
+329,1330 2100 S,Salt Lake City,UT,84106,15
+330,8485 Pinehurstwood St,Salt Lake City,UT,84115,10
+331,4300 S 1300 E,Millcreek,UT,84117,8
+332,3435 Poplar Ave,Salt Lake City,UT,84106,4
+333,7273 Poplarwood St,Salt Lake City,UT,84105,15
+334,600 E 900 South,Salt Lake City,UT,84105,25
+335,3575 W Valley Central Station bus Loop,West Valley City,UT,84119,21
+336,410 S State St,Salt Lake City,UT,84111,15
+337,789 Oak St,Salt Lake City,UT,84106,30
+338,5383 South 900 East #104,Salt Lake City,UT,84117,4
+339,8888 S 9999 W,Salt Lake City,UT,84111,8
+340,3031 Sycamore Ave,Salt Lake City,UT,84111,10
+341,7475 Cypresswood Ave,Salt Lake City,UT,84106,25
+342,5253 Greenbriar St,Salt Lake City,UT,84119,7
+343,8687 Forestwood Ave,Salt Lake City,UT,84103,18
+344,1415 Cedar Ave,Salt Lake City,UT,84115,20
+345,4647 Pinehurst Ave,Salt Lake City,UT,84118,15
+346,4647 Pinehurst Ave,Salt Lake City,UT,84118,9
+347,4300 S 1300 E,Millcreek,UT,84117,16
+348,2223 Walnut Ave,Salt Lake City,UT,84119,4
+349,6666 E 7777 N,Salt Lake City,UT,84119,4
+350,8889 Willowcrestwood St,Salt Lake City,UT,84117,35
+351,4580 S 2300 E,Holladay,UT,84117,12
+352,7071 Magnoliawood Ave,Salt Lake City,UT,84119,15
+353,5555 W 2222 S,Salt Lake City,UT,84104,7
+354,2222 S 3333 W,Salt Lake City,UT,84117,7
+355,600 E 900 South,Salt Lake City,UT,84105,24
+356,4321 N 8765 E,Salt Lake City,UT,84119,12
+357,5859 Cedarwood Ave,Salt Lake City,UT,84115,40
+358,1021 Birchwoodcrest Ave,Salt Lake City,UT,84104,20
+359,8687 Forestwood Ave,Salt Lake City,UT,84103,3
+360,4849 Forest St,Salt Lake City,UT,84111,4
+361,8889 Willowcrestwood St,Salt Lake City,UT,84117,35
+362,7777 E 3333 N,Salt Lake City,UT,84119,28
+363,6666 E 7777 N,Salt Lake City,UT,84119,6
+364,1234 W 4567 S,Salt Lake City,UT,84115,8
+365,2600 Taylorsville Blvd,Salt Lake City,UT,84118,7
+366,4041 Laurel St,Salt Lake City,UT,84117,20
+367,4647 Pinehurst Ave,Salt Lake City,UT,84118,12
+368,4580 S 2300 E,Holladay,UT,84117,6
+369,3839 Juniper Ave,Salt Lake City,UT,84117,6
+370,4580 S 2300 E,Holladay,UT,84117,15
+371,5555 N 6666 E,Salt Lake City,UT,84119,16
+372,6061 Maplewood St,Salt Lake City,UT,84123,6
+373,2468 E 7531 N,Salt Lake City,UT,84117,10
+374,8888 S 9999 W,Salt Lake City,UT,84111,24
+375,3365 S 900 W,Salt Lake City,UT,84119,2
+376,3575 W Valley Central Station bus Loop,West Valley City,UT,84119,12
+377,7777 E 3333 N,Salt Lake City,UT,84119,9
+378,2627 Ash Ave,Salt Lake City,UT,84115,6
+379,9293 Oakwoodcrest St,Salt Lake City,UT,84106,8
+380,3060 Lester St,West Valley City,UT,84119,12
+381,5859 Cedarwood Ave,Salt Lake City,UT,84115,12
+382,3148 S 1100 W,Salt Lake City,UT,84119,24
+383,6351 South 900 East,Murray,UT,84121,20
+384,1819 Willow Ave,Salt Lake City,UT,84111,16
+385,3575 W Valley Central Station bus Loop,West Valley City,UT,84119,20
+386,7677 Juniperwood St,Salt Lake City,UT,84106,8
+387,4580 S 2300 E,Holladay,UT,84117,3
+388,6666 E 7777 N,Salt Lake City,UT,84119,8
+389,4647 Pinehurst Ave,Salt Lake City,UT,84118,15
+390,3148 S 1100 W,Salt Lake City,UT,84119,16
+391,5555 W 2222 S,Salt Lake City,UT,84104,6
+392,5555 W 2222 S,Salt Lake City,UT,84104,10
+393,5051 Willowcrest Ave,Salt Lake City,UT,84104,8
+394,5555 N 6666 E,Salt Lake City,UT,84119,16
+395,8889 Willowcrestwood St,Salt Lake City,UT,84117,1
+396,1011 Maple Ave,Salt Lake City,UT,84104,9
+397,1011 Maple Ave,Salt Lake City,UT,84104,2
+398,4444 N 5555 E,Salt Lake City,UT,84104,9
+399,2222 S 3333 W,Salt Lake City,UT,84117,5
+400,3839 Juniper Ave,Salt Lake City,UT,84117,7
+401,6666 E 7777 N,Salt Lake City,UT,84119,6
+402,8283 Sequoiawood Ave,Salt Lake City,UT,84104,40
+403,7071 Magnoliawood Ave,Salt Lake City,UT,84119,16
+404,9876 N 4321 E,Salt Lake City,UT,84111,14
+405,300 State St,Salt Lake City,UT,84103,25
+406,5555 E 8888 N,Salt Lake City,UT,84115,21
+407,7475 Cypresswood Ave,Salt Lake City,UT,84106,8
+408,2468 W 3579 S,Salt Lake City,UT,84104,6
+409,789 Oak St,Salt Lake City,UT,84106,12
+410,7071 Magnoliawood Ave,Salt Lake City,UT,84119,4
+411,4580 S 2300 E,Holladay,UT,84117,15
+412,5025 State St,Murray,UT,84107,12
+413,2223 Walnut Ave,Salt Lake City,UT,84119,3
+414,5555 N 9999 E,Salt Lake City,UT,84119,2
+415,2468 S 1357 W,Salt Lake City,UT,84103,15
+416,6667 Sprucewood Ave,Salt Lake City,UT,84104,8
+417,7677 Juniperwood St,Salt Lake City,UT,84106,3
+418,7777 E 3333 N,Salt Lake City,UT,84119,2
+419,3365 S 900 W,Salt Lake City,UT,84119,18
+420,1330 2100 S,Salt Lake City,UT,84106,20
+421,1415 Cedar Ave,Salt Lake City,UT,84115,7
+422,9876 S 1234 W,Salt Lake City,UT,84106,14
+423,4444 N 5555 E,Salt Lake City,UT,84104,10
+424,4041 Laurel St,Salt Lake City,UT,84117,18
+425,1234 W 4567 S,Salt Lake City,UT,84115,30
+426,123 Main St,Salt Lake City,UT,84118,2
+427,2468 S 1357 W,Salt Lake City,UT,84103,6
+428,5383 South 900 East #104,Salt Lake City,UT,84117,20
+429,8485 Pinehurstwood St,Salt Lake City,UT,84115,8
+430,1111 W 2222 N,Salt Lake City,UT,84106,5
+431,9876 S 1234 W,Salt Lake City,UT,84106,12
+432,5555 W 2222 S,Salt Lake City,UT,84104,6
+433,5555 N 6666 E,Salt Lake City,UT,84119,8
+434,8888 S 9999 W,Salt Lake City,UT,84111,2
+435,9999 E 1111 N,Salt Lake City,UT,84106,10
+436,5657 Meadowbrook St,Salt Lake City,UT,84115,10
+437,9876 N 4321 E,Salt Lake City,UT,84111,10
+438,4445 Sequoia St,Salt Lake City,UT,84106,21
+439,789 Oak St,Salt Lake City,UT,84106,28
+440,7777 W 8888 S,Salt Lake City,UT,84119,4
+441,9876 N 4321 E,Salt Lake City,UT,84111,25
+442,9876 N 4321 E,Salt Lake City,UT,84111,2
+443,380 W 2880 S,Salt Lake City,UT,84115,20
+444,380 W 2880 S,Salt Lake City,UT,84115,10
+445,1234 S 6543 W,Salt Lake City,UT,84111,5
+446,3333 E 4444 S,Salt Lake City,UT,84103,2
+447,5859 Cedarwood Ave,Salt Lake City,UT,84115,10
+448,1111 W 2222 N,Salt Lake City,UT,84106,2
+449,2530 S 500 E,Salt Lake City,UT,84106,6
+450,1488 4800 S,Salt Lake City,UT,84123,18
+451,600 E 900 South,Salt Lake City,UT,84105,25
+452,177 W Price Ave,Salt Lake City,UT,84115,12
+453,9091 Greenbriarwood Ave,Salt Lake City,UT,84117,6
+454,3839 Juniper Ave,Salt Lake City,UT,84117,30
+455,1819 Willow Ave,Salt Lake City,UT,84111,12
+456,8081 Redwoodwood St,Salt Lake City,UT,84103,2
+457,1213 Pine St,Salt Lake City,UT,84115,25
+458,8081 Redwoodwood St,Salt Lake City,UT,84103,20
+459,7071 Magnoliawood Ave,Salt Lake City,UT,84119,18
+460,3435 Poplar Ave,Salt Lake City,UT,84106,2
+461,6465 Birchwood St,Salt Lake City,UT,84115,40
+462,3839 Juniper Ave,Salt Lake City,UT,84117,6
+463,5455 Oakwood Ave,Salt Lake City,UT,84119,8
+464,233 Canyon Rd,Salt Lake City,UT,84103,16
+465,3333 E 4444 S,Salt Lake City,UT,84103,12
+466,2010 W 500 S,Salt Lake City,UT,84104,8
+467,3333 E 4444 S,Salt Lake City,UT,84103,5
+468,5100 South 2700 West,Salt Lake City,UT,84118,24
+469,3839 Juniper Ave,Salt Lake City,UT,84117,2
+470,6061 Maplewood St,Salt Lake City,UT,84123,35
+471,7777 W 8888 S,Salt Lake City,UT,84119,24
+472,3333 E 4444 S,Salt Lake City,UT,84103,30
+473,123 Main St,Salt Lake City,UT,84118,3
+474,5455 Oakwood Ave,Salt Lake City,UT,84119,6
+475,1488 4800 S,Salt Lake City,UT,84123,3
+476,1234 S 6543 W,Salt Lake City,UT,84111,6
+477,2468 E 7531 N,Salt Lake City,UT,84117,25
+478,1330 2100 S,Salt Lake City,UT,84106,12
+479,4300 S 1300 E,Millcreek,UT,84117,12
+480,7475 Cypresswood Ave,Salt Lake City,UT,84106,40
+481,2468 S 1357 W,Salt Lake City,UT,84103,20
+482,195 W Oakland Ave,Salt Lake City,UT,84115,3
+483,3575 W Valley Central Station bus Loop,West Valley City,UT,84119,2
+484,8888 S 9999 W,Salt Lake City,UT,84111,21
+485,4321 N 8765 E,Salt Lake City,UT,84119,35
+486,1060 Dalton Ave S,Salt Lake City,UT,84104,9
+487,4445 Sequoia St,Salt Lake City,UT,84106,3
+488,2600 Taylorsville Blvd,Salt Lake City,UT,84118,4
+489,1001 Walnutwoodcrest St,Salt Lake City,UT,84103,12
+490,2835 Main St,Salt Lake City,UT,84115,18
+491,2468 E 7531 N,Salt Lake City,UT,84117,20
+492,6465 Birchwood St,Salt Lake City,UT,84115,4
+493,7677 Juniperwood St,Salt Lake City,UT,84106,4
+494,6465 Birchwood St,Salt Lake City,UT,84115,10
+495,9899 Maplewoodcrest Ave,Salt Lake City,UT,84115,20
+496,1819 Willow Ave,Salt Lake City,UT,84111,25
+497,3148 S 1100 W,Salt Lake City,UT,84119,1
+498,7777 E 3333 N,Salt Lake City,UT,84119,8
+499,2021 Spruce St,Salt Lake City,UT,84103,40
+500,3148 S 1100 W,Salt Lake City,UT,84119,10
+501,5383 South 900 East #104,Salt Lake City,UT,84117,9
+502,2530 S 500 E,Salt Lake City,UT,84106,20
+503,4321 N 8765 E,Salt Lake City,UT,84119,32

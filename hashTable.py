@@ -68,3 +68,10 @@ class HashTable:
                 return
         # If the key is not found, return an Error
         raise KeyError(f"Key '{key}' not found in the hash table")
+
+    # Retrieve all key-value pairs from the HashTable.
+    def items(self):
+        all_items = []
+        for bucket_list in self.table:
+            all_items.extend(bucket_list)
+        return all_items

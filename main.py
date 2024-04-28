@@ -1,24 +1,22 @@
 # Student Name: Sean Decrescenzo
 # Student ID: 000973102
-
 # Import necessary modules and classes
 import csv
 import datetime
 import math
 import os
 import sys
+import random
 import truck
 from package import Package
 from hashTable import HashTable
 import tkinter as tk
 from tkinter import filedialog, messagebox, ttk
-import random
-import numpy as np
 import logging
 import matplotlib.pyplot as plt
-import matplotlib
-matplotlib.use('TkAgg')
-
+import numpy as np
+from sklearn.cluster import AgglomerativeClustering
+from sklearn.neighbors import RadiusNeighborsTransformer
 
 logging.basicConfig(filename='app.log', level=logging.DEBUG,
                     format='%(asctime)s - %(levelname)s - %(message)s')
@@ -44,6 +42,9 @@ if not os.path.exists(csv_folder_path):
 # Construct the file paths
 csv_path_distance = os.path.join(csv_folder_path, 'WGUPSDistanceFile2.0.csv')
 csv_path_address = os.path.join(csv_folder_path, 'WGUPSAddressFile2.0.csv')
+
+# For CSV path override during debugging
+csv_path_package = os.path.join(csv_folder_path, 'WGUPSPackageFile2.0.csv')
 
 # Read the csv files of distance and address information
 with open(csv_path_distance, 'r') as csvDistanceTable:
@@ -86,86 +87,113 @@ def select_file():
     if file_path:
         print(f"Selected package file: {file_path}")
         load_package_data(file_path, package_table)
-        root.destroy()  # Close the Tkinter window
+        root.destroy()
 
-# file_path = 'CSV/WGUPSPackageFile2.0.csv'
-# load_package_data(file_path, package_table)
 
 root = tk.Tk()
 root.title("File Selection Example")
-
 button = tk.Button(root, text="Select File", command=select_file)
 button.pack(padx=40, pady=40)
-
 root.mainloop()
 
-# Initialize a list to store the delivered packages
 trucks = []
-
-for i in range(1, 5):
+for i in range(0, 4):
     new_truck = truck.Truck(i, i, [], 0.0, "4001 South 700 East", 30, datetime.timedelta(hours=7), 0)
     trucks.append(new_truck)
 
-
-def load_packages(truck, all_packages_off_trucks, distance_data, total_weight_all_packages, total_trucks):
-    current_weight = truck.load_weight  # Start with the current load weight of the truck
-    average_weight_per_truck = total_weight_all_packages // len(total_trucks)
-
-    while current_weight < average_weight_per_truck and current_weight < truck.max_weight:
-        # Select a random package from the remaining packages
-        random_package = random.choice(all_packages_off_trucks)
-        package_weight = random_package.weight
-
-        # Check if the package's weight can be accommodated
-        if current_weight + package_weight <= average_weight_per_truck:
-            # Add the package to the truck
-            truck.packages.append(random_package.package_id)
-            current_weight += package_weight
-            truck.load_weight += package_weight  # Update the truck's load weight
-            all_packages_off_trucks.remove(random_package)
-        else:
-            break
-
-    # If there are still packages left and this is the last truck, add them to this truck
-    if len(all_packages_off_trucks) > 0 and truck == total_trucks[-1]:
-        for package in all_packages_off_trucks:
-            if current_weight + package.weight <= truck.max_weight:
-                truck.packages.append(package)
-                current_weight += package.weight
-                truck.load_weight += package.weight
-                all_packages_off_trucks.remove(package)
-
-
-all_packages_off_trucks = package_table.get_all_packages()
-total_weight_all_packages = sum(package.weight for package in all_packages_off_trucks)
-
-undelivered_packages = {}
 delivery_order = {}
 route_durations = {}
-# Assuming total_trucks is the total number of trucks
-for truck in trucks:
-    load_packages(truck, all_packages_off_trucks, raw_distance_data, total_weight_all_packages, trucks)
-    undelivered_packages[truck.truck_id] = truck.packages
-    delivery_order[truck.truck_id] = []
-    route_durations[truck.truck_id] = []
 
 
 def calculate_distance(address1, address2, distance_data):
     index1 = get_destination_index(address1)
     index2 = get_destination_index(address2)
     if index1 is not None and index2 is not None:
-        distance = distance_data[index1][index2]
-        if distance == '':
-            distance = distance_data[index2][index1]
-        return float(distance)
+        distance_between_indexes = distance_data[index1][index2]
+        if distance_between_indexes == '':
+            distance_between_indexes = distance_data[index2][index1]
+        return float(distance_between_indexes)
     return float('inf')
 
 
-def get_destination_index(address):
+def get_destination_index(street_address):
     for i, record in enumerate(raw_address_data):
-        if record[2] == address:
+        if record[2] == street_address:
             return i
     return None
+
+
+# Gather a list of all street addresses to create distance matrix
+address_list = [record[2] for record in raw_address_data]
+
+# Calculate the distances between addresses
+distances = np.zeros((len(address_list), len(address_list)))
+for i in range(len(address_list)):
+    for j in range(i + 1, len(address_list)):
+        distance = calculate_distance(address_list[i], address_list[j], raw_distance_data)
+        distances[i, j] = distance
+        distances[j, i] = distance
+
+# Create a RadiusNeighborsTransformer object and map neighbors as indexes within 10.0 distance
+rnt = RadiusNeighborsTransformer(radius=10, mode='distance', metric='precomputed')
+
+# Fit the transformer to the distances
+rnt.fit(distances)
+
+# Initialize an empty connectivity matrix
+connectivity_matrix = np.zeros((len(address_list), len(address_list)))
+
+
+# Get the nearest neighbor for a given index and add the data to the connectivity_matrix array
+for i in range(len(address_list)):
+    neighbors_indices = rnt.radius_neighbors([distances[i]], return_distance=False)[0]
+    nearest_neighbors = [address_list[i] for i in neighbors_indices]
+    connectivity_matrix[i, neighbors_indices] = 1
+
+# Cluster the addresses
+clusterer = AgglomerativeClustering(n_clusters=4, connectivity=connectivity_matrix, linkage='ward')
+clusters = clusterer.fit_predict(distances)
+
+
+# Assign packages to clusters
+package_clusters = {}
+for package_id, package in package_table.items():
+    cluster_id = clusters[get_destination_index(package.address)]
+    if cluster_id not in package_clusters:
+        package_clusters[cluster_id] = []
+    package_clusters[cluster_id].append((package_id, package))
+
+
+for truck in trucks:
+    cluster_id = truck.truck_id
+    if cluster_id in package_clusters:
+        cluster = package_clusters[cluster_id]
+        while cluster and truck.load_weight < truck.max_weight:
+            package_id, package = cluster[0]  # Get the first package in the cluster
+            if package.weight <= truck.max_weight - truck.load_weight:
+                truck.packages.append(str(package_id))  # Append only the package ID
+                truck.load_weight += package.weight
+                cluster.pop(0)  # Remove the package from the cluster
+            else:
+                break  # Stop loading packages if weight limit is reached
+        if not cluster:  # Remove the cluster from the copy if it's empty
+            del package_clusters[cluster_id]
+
+# Fill remaining space in trucks from non-empty clusters
+non_empty_clusters = {c_id: packages for c_id, packages in package_clusters.items() if packages}
+for truck in trucks:
+    if truck.load_weight < truck.max_weight:
+        for cluster_id, cluster in package_clusters.items():
+            while cluster and truck.load_weight < truck.max_weight:
+                package_id, package = cluster[0]  # Get the first package in the cluster
+                if package.weight <= truck.max_weight - truck.load_weight:
+                    truck.packages.append(str(package_id))  # Append only the package ID
+                    truck.load_weight += package.weight
+                    cluster.pop(0)  # Remove the package from the cluster
+                else:
+                    break  # Stop loading packages if weight limit is reached
+            if not cluster:  # Remove the cluster from the copy if it's empty
+                del package_clusters[cluster_id]
 
 
 def calculate_route_time(truck, delivery_order, distance_data):
@@ -187,7 +215,7 @@ def simulated_annealing_truck_route(truck, distance_data):
     best_order = current_order.copy()
     best_time = current_time
     temperature = 221.25
-    cooling_rate = 0.0005
+    cooling_rate = 0.002
     min_temperature = 0.01
     iteration_count = 0
     while temperature > min_temperature:
@@ -215,6 +243,7 @@ def simulated_annealing_truck_route(truck, distance_data):
 
 # Optimize routes using simulated annealing
 for truck in trucks:
+    route_durations[truck.truck_id] = []
     truck.packages = simulated_annealing_truck_route(truck, raw_distance_data)
 
 
@@ -260,7 +289,8 @@ def deliver_packages(current_truck, distance_data):
             current_truck.location = "4001 South 700 East"
             # Track the time of arrival at the hub
             arrival_time_at_hub = current_truck.departure_time + current_truck.accumulated_time
-            arrival_datetime_at_hub = datetime.datetime.now().replace(hour=0, minute=0, second=0, microsecond=0) + arrival_time_at_hub
+            arrival_datetime_at_hub = datetime.datetime.now().replace(hour=0, minute=0, second=0,
+                                                                      microsecond=0) + arrival_time_at_hub
 
             print(
                 f"Truck {current_truck.truck_id} - Arrival Time at Hub: {arrival_datetime_at_hub.strftime('%I:%M %p')}")
@@ -268,6 +298,7 @@ def deliver_packages(current_truck, distance_data):
 
 # Deliver packages
 for truck in trucks:
+    delivery_order[truck.truck_id] = []
     deliver_packages(truck, raw_distance_data)
 
 # Create a matrix to represent the delivery routes
@@ -288,50 +319,21 @@ for i, address_data in enumerate(raw_address_data):
             frequency_matrix[i, 0] += 1  # Increment the frequency count for the current address
 
 
-def generate_delivery_routes_heatmap():
-    # Calculate the distances from each address to the hub
-    hub_address = raw_address_data[0][2]
-    distances_to_hub = [calculate_distance(hub_address, address[2], raw_distance_data) for address in raw_address_data]
+def generate_distance_from_hub_clusters():
+    # Calculate the distances of each location from the center point (address at index 0)
+    center_distances = distances[0]
 
-    # Create a grid of coordinates for the heatmap
-    x_coords = np.linspace(-25, 25, 101)
-    y_coords = np.linspace(-20, 20, 101)
-    X, Y = np.meshgrid(x_coords, y_coords)
+    # Create a scatter plot of the distances from the center point, coloring each point by its cluster
+    plt.figure(figsize=(10, 6))
+    for cluster_id in np.unique(clusters):
+        cluster_indices = np.where(clusters == cluster_id)[0]
+        plt.scatter(cluster_indices, center_distances[cluster_indices], label=f'Cluster {cluster_id}', alpha=0.5)
 
-    # Calculate the distance of each point in the grid from the hub
-    distances_from_hub = np.sqrt(X ** 2 + Y ** 2)
-
-    # Create a heatmap based on the number of packages delivered to each location
-    heatmap = np.zeros_like(distances_from_hub)
-    for i, distance in enumerate(distances_to_hub):
-        heatmap += np.where(np.isclose(distances_from_hub, distance, atol=0.5), frequency_matrix[i], 0)
-
-    # Plot the heatmap
-    plt.figure(figsize=(11, 7))
-    plt.imshow(heatmap, cmap='viridis', origin='lower', extent=(-25, 25, -20, 20), alpha=1, interpolation='spline36')
-    plt.colorbar(label='Number of Deliveries', shrink=0.5)
-
-    # Plot each address as a point on the heatmap
-    hub_x, hub_y = 0, 0  # Position of the hub
-    plt.scatter([hub_x], [hub_y], c='blue', label='Hub', s=100)  # Plot the hub at the center
-    for i, distance in enumerate(distances_to_hub[1:], start=1):
-        angle = i * (2 * np.pi / len(distances_to_hub[1:]))  # Calculate the angle for positioning
-        x = distance * np.cos(angle)
-        y = distance * np.sin(angle)
-        plt.scatter(x, y, c='white')  # Plot each address based on its distance and angle
-
-    # Create a legend for the hub and addresses
-    legend_elements = [
-        plt.Line2D([0], [0], marker='o', markerfacecolor='blue', markersize=10, label='Hub', linestyle='None'),
-        plt.Line2D([0], [0], marker='o', markerfacecolor='white', markersize=10, label='Addresses', linestyle='None')
-    ]
-    plt.legend(handles=legend_elements, loc='upper right')
-
-    plt.xlabel('Distance from Hub', labelpad=10)
-    plt.ylabel('Distance from Hub', labelpad=10)
-    plt.title('Delivery Routes Heat Map')
-    plt.tight_layout(pad=0.2)
-    plt.show(block=True)
+    plt.xlabel('Location Index')
+    plt.ylabel('Distance from Hub')
+    plt.title('Distance from Hub Scatter Plot with Clusters')
+    plt.legend()
+    plt.show()
 
 
 def generate_delivery_distribution():
@@ -341,7 +343,7 @@ def generate_delivery_distribution():
     # Create a histogram
     plt.figure(figsize=(12, 6))
     plt.bar(range(len(raw_address_data)), total_deliveries_per_address, color='b', alpha=0.7)
-    plt.xlabel('Address Index')
+    plt.xlabel('Address')
     plt.ylabel('Number of Deliveries')
     plt.title('Distribution of Completed Deliveries to Each Address')
     plt.xticks(range(len(raw_address_data)), [address[2] for address in raw_address_data], rotation=90, fontsize=6)
@@ -395,13 +397,9 @@ def create_visualizations_window():
     # Set the window size
     visualizations_window.geometry("500x200")
 
-    # Add a label
-    label = tk.Label(visualizations_window, text="Delivery Route Visualizations")
-    label.pack()
-
     # Add buttons to generate each visualization
-    button1 = tk.Button(visualizations_window, text="Delivery Routes Heat Map",
-                        command=generate_delivery_routes_heatmap)
+    button1 = tk.Button(visualizations_window, text="Addresses Distance from Hub and Cluster",
+                        command=generate_distance_from_hub_clusters)
     button1.pack(side=tk.TOP, pady=10)
 
     button2 = tk.Button(visualizations_window, text="Distribution of Completed Deliveries to Each Address",
@@ -574,6 +572,13 @@ def create_truck_and_package_data_window():
             tree.heading(col, anchor=tk.CENTER)
             tree.column(col, anchor=tk.CENTER)
 
+        total_route_time = 0
+        for truck in trucks:
+            total_route_time += truck.accumulated_time.total_seconds()
+
+        average_route_time = total_route_time / len(trucks)
+        print(f'{average_route_time}')
+
         # Start the main event loop for the window
         mileage_window.mainloop()
 
@@ -623,7 +628,6 @@ def main():
     exit_button = tk.Button(root, text="Exit", command=root.destroy)
     exit_button.pack(side=tk.TOP, pady=10)
     root.mainloop()
-
 
 
 if __name__ == "__main__":
