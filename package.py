@@ -29,24 +29,3 @@ class Package:
                 f"| Status: {self.status:<9} "
                 f"| Loaded Time: {loaded_time_str:<7} ")
 
-    # Function utilized by the integrated UI to determine package status at a specific point in time
-    def status_check(self, convert_timedelta):
-        if not convert_timedelta or not self.delivery_time or not self.loaded_time:
-            self.status = "At Hub"
-        elif self.delivery_time <= convert_timedelta:
-            self.status = "Delivered"
-        elif self.loaded_time <= convert_timedelta:
-            self.status = "En route"
-        else:
-            self.status = "At Hub"
-
-
-    def set_converted_delivery_time(self, convert_timedelta):
-        if not convert_timedelta or not self.delivery_time or not self.loaded_time:
-            self.converted_delivery_time = "N/A"
-        elif self.delivery_time <= convert_timedelta:
-            self.converted_delivery_time = self.delivery_time
-        elif self.loaded_time <= convert_timedelta:
-            self.converted_delivery_time = "N/A"
-        else:
-            self.converted_delivery_time = "N/A"

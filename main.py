@@ -84,9 +84,10 @@ def select_file():
 
 
 root = tk.Tk()
-root.title("File Selection Example")
-button = tk.Button(root, text="Select File", command=select_file)
+root.title("WGUPS Logistics Tool")
+button = tk.Button(root, text="Please Select Package File", command=select_file)
 button.pack(padx=40, pady=40)
+root.minsize(400, 200)
 root.mainloop()
 
 # Initialize 4 delivery trucks and associated elements
@@ -217,6 +218,8 @@ route_durations = {}
 #   The best order of delivery for packages on the truck after optimization.
 def simulated_annealing_truck_route(current_truck, distance_data):
     current_order = current_truck.packages
+    if len(current_order) < 2:
+        return current_order  # Skip optimization if there are less than 2 packages
     original_time = calculate_route_time(current_truck, current_order, distance_data)
     current_time = calculate_route_time(current_truck, current_order, distance_data)
     best_order = current_order.copy()
@@ -227,6 +230,8 @@ def simulated_annealing_truck_route(current_truck, distance_data):
     iteration_count = 0
     while temperature > min_temperature:
         new_order = current_order.copy()
+        if len(new_order) < 2:
+            continue  # Skip this iteration if there are less than 2 packages
         package_index1, package_index2 = random.sample(range(len(new_order)), 2)
         new_order[package_index1], new_order[package_index2] = new_order[package_index2], new_order[package_index1]
         new_time = calculate_route_time(current_truck, new_order, distance_data)
@@ -250,6 +255,10 @@ def simulated_annealing_truck_route(current_truck, distance_data):
     return best_order
 
 
+
+
+
+
 # Optimize routes for each truck using simulated annealing method
 for truck in trucks:
     route_durations[truck.truck_id] = []
@@ -262,7 +271,6 @@ def deliver_package(current_truck, next_package, delivery_distance):
     current_truck.accumulated_time += delivery_time
     next_package.loaded_time = current_truck.departure_time
     next_package.truck_info = current_truck.truck_id
-    next_package.status = "Delivered"
     next_package.delivery_time = current_truck.departure_time + current_truck.accumulated_time
     current_truck.mileage += delivery_distance
     current_truck.location = next_package.address
@@ -306,6 +314,8 @@ def deliver_packages(current_truck, distance_data):
 # Iterate over all the trucks and deliver packages for each truck.
 # Track the order in which each truck delivered packages.
 for truck in trucks:
+    if not truck.packages:
+        continue  # Skip trucks with no packages
     delivery_order[truck.truck_id] = []
     deliver_packages(truck, raw_distance_data)
 
@@ -358,7 +368,6 @@ def generate_delivery_distribution():
 
 # Visualization bar chart of each trucks total route duration.
 def generate_total_route_duration():
-    # Calculate the total route duration for each truck formatted for bar chart.
     total_route_durations = [current_truck.accumulated_time.total_seconds() / 3600 for current_truck in trucks]
 
     plt.figure(figsize=(12, 6))
@@ -399,7 +408,7 @@ def create_visualizations_window():
     visualizations_window.title("Visualizations")
     visualizations_window.geometry("500x200")
 
-    button1 = tk.Button(visualizations_window, text="Addresses Distance from Hub and Cluster",
+    button1 = tk.Button(visualizations_window, text="Addresses Distance from Hub and Locale Cluster",
                         command=generate_distance_from_hub_clusters)
     button1.pack(side=tk.TOP, pady=10)
 
@@ -424,76 +433,83 @@ def visualize_data():
 def create_truck_and_package_data_window():
     data_window = tk.Toplevel()
     data_window.title("Truck and Package Data")
-    data_window.geometry("300x200")
+    data_window.geometry("800x400")
 
-    time_label = tk.Label(data_window, text="Enter time (HH:MM):")
-    time_entry = tk.Entry(data_window)
-    package_id_label = tk.Label(data_window, text="Enter package ID or 'all':")
-    package_id_entry = tk.Entry(data_window)
-    package_status_button = tk.Button(data_window, text="Check Package Status",
-                                      command=lambda: view_package_status(time_entry.get(), package_id_entry.get()))
+    # Truck Information Section
+    truck_frame = tk.Frame(data_window, padx=10, pady=10)
+    truck_frame.grid(row=0, column=0, padx=10, pady=10, sticky="nsew")
+    truck_label = tk.Label(truck_frame, text="Truck Information", font=("Arial", 12, "bold"))
+    truck_label.grid(row=0, column=0, columnspan=2, padx=10, pady=10)
 
-    mileage_button = tk.Button(data_window, text="View Truck Mileage", command=view_mileage)
-    mileage_display = tk.Label(data_window, text="")
+    truck_id_label = tk.Label(truck_frame, text="Enter Truck ID:")
+    truck_id_label.grid(row=1, column=0, padx=10, pady=10)
+    truck_id_entry = tk.Entry(truck_frame)
+    truck_id_entry.grid(row=1, column=1, padx=10, pady=10)
+    truck_load_view_button = tk.Button(truck_frame, text="View Optimal Truck Load",
+                                       command=lambda: view_truck_packages(truck_id_entry.get()))
+    truck_load_view_button.grid(row=2, column=0, columnspan=2, padx=10, pady=10)
 
-    time_label.grid(row=0, column=0, padx=10, pady=10)
-    time_entry.grid(row=0, column=1, padx=10, pady=10)
-    package_id_label.grid(row=1, column=0, padx=10, pady=10)
-    package_id_entry.grid(row=1, column=1, padx=10, pady=10)
-    package_status_button.grid(row=2, column=0, columnspan=2, padx=10, pady=10)
+    mileage_button = tk.Button(truck_frame, text="View All Truck Route Details", command=view_mileage)
     mileage_button.grid(row=3, column=0, columnspan=2, padx=10, pady=10)
-    mileage_display.grid(row=4, column=0, columnspan=2, padx=10, pady=10)
+
+    # Package Information Section
+    package_frame = tk.Frame(data_window, padx=10, pady=10)
+    package_frame.grid(row=0, column=1, padx=10, pady=10, sticky="nsew")
+    package_label = tk.Label(package_frame, text="Package Information", font=("Arial", 12, "bold"))
+    package_label.grid(row=0, column=0, columnspan=2, padx=10, pady=10)
+
+    package_id_label = tk.Label(package_frame, text="Enter package ID or 'all':")
+    package_id_label.grid(row=1, column=0, padx=10, pady=10)
+    package_id_entry = tk.Entry(package_frame)
+    package_id_entry.grid(row=1, column=1, padx=10, pady=10)
+    package_status_button = tk.Button(package_frame, text="Check Package Information",
+                                      command=lambda: view_package_status(package_id_entry.get()))
+    package_status_button.grid(row=2, column=0, columnspan=2, padx=10, pady=10)
+
+    data_window.rowconfigure(0, weight=1)
+    data_window.columnconfigure(0, weight=1)
+    data_window.columnconfigure(1, weight=1)
+    data_window.mainloop()
 
 
-def view_package_status(time_entry, package_id_entry):
-    user_time = time_entry
-    try:
-        h, m = user_time.split(":")
-        convert_timedelta = datetime.timedelta(hours=int(h), minutes=int(m))
-    except ValueError:
-        messagebox.showerror("Error", "Please enter time in HH:MM format.")
-        return
-
+def view_package_status(package_id_entry):
     user_package_id = package_id_entry
     if user_package_id.isdigit():
         user_package_id = int(user_package_id)
-        if user_package_id not in range(1, 200):
+        if user_package_id not in range(1, 500):
             messagebox.showerror("Error", "Package not found. Please enter a valid package ID (1-40).")
             return
         user_package = package_table.get_package(user_package_id)
-        display_package_info(user_package, convert_timedelta)
+        display_package_info(user_package)
     elif user_package_id.lower() == "all":
         packages = package_table.get_all_packages()
-        display_all_packages_info(packages, convert_timedelta)
+        display_all_packages_info(packages, display_truck_id=None)
     else:
         messagebox.showerror("Error", "Please enter a numeric package ID, 'all', or 'exit'.")
         return
 
 
-def display_package_info(package_data, convert_timedelta):
-    package_data.set_converted_delivery_time(convert_timedelta)
-    package_data.status_check(convert_timedelta)
-
+def display_package_info(package_data):
     package_window = tk.Toplevel()
     package_window.title("Package Information")
 
     tree = ttk.Treeview(package_window,
-                        columns=("Truck ID", "Address", "Weight", "Delivery Time", "Status", "Loaded Time"))
+                        columns=("Truck ID", "Address", "Weight", "Delivery Time", "Loaded Time"))
     tree.heading("#0", text="Package ID", anchor=tk.CENTER)
     tree.column("#0", minwidth=0, width=100, stretch=tk.NO, anchor=tk.CENTER)
     tree.heading("Truck ID", text="Truck ID", anchor=tk.CENTER)
     tree.heading("Address", text="Address", anchor=tk.CENTER)
     tree.heading("Weight", text="Weight (lbs)", anchor=tk.CENTER)
-    tree.heading("Delivery Time", text="Delivery Time", anchor=tk.CENTER)
-    tree.heading("Status", text="Status", anchor=tk.CENTER)
+    tree.heading("Delivery Time", text="Estimated Delivery Time", anchor=tk.CENTER)
     tree.heading("Loaded Time", text="Loaded Time", anchor=tk.CENTER)
 
+    package_data.converted_delivery_time = package.delivery_time
     truck_info = int(package_data.truck_info) + 1 if package_data.truck_info != 'None' else "Not on truck"
     tree.insert("", "end", text=str(package_data.package_id),
                 values=(truck_info,
                         f"{package_data.address}, {package_data.city}, {package_data.state} "
                         f"{package_data.zip_code}", package_data.weight, package_data.converted_delivery_time,
-                        package_data.status, package_data.loaded_time))
+                        package_data.loaded_time))
 
     tree.pack(fill=tk.BOTH, expand=True)
     scroll_y = ttk.Scrollbar(package_window, orient=tk.VERTICAL, command=tree.yview)
@@ -507,34 +523,40 @@ def display_package_info(package_data, convert_timedelta):
     package_window.mainloop()
 
 
-def display_all_packages_info(packages, convert_timedelta):
+def display_all_packages_info(packages, display_truck_id):
     for package_data in packages:
-        package_data.set_converted_delivery_time(convert_timedelta)
-        package_data.status_check(convert_timedelta)
+        package_data.converted_delivery_time = package_data.delivery_time
 
-    sorted_packages = sorted(packages, key=lambda x: int(x.package_id))
     all_packages_window = tk.Toplevel()
-    all_packages_window.title("All Packages Information")
+    sorted_packages = []
+    if display_truck_id is None:
+        all_packages_window.title("All Packages Information")
+        sorted_packages = sorted(packages, key=lambda x: int(x.package_id))
+    if display_truck_id:
+        all_packages_window.title(
+            f"Optimal Delivery Order for Truck {display_truck_id}: All Estimates Based On 7:00AM Load Time")
+        sorted_packages = sorted(packages, key=lambda x: x.delivery_time)
 
     tree = ttk.Treeview(all_packages_window,
                         columns=(
-                            "Truck ID", "Address", "Weight", "Delivery Time", "Status", "Loaded Time"))
+                            "Truck ID", "Address", "Weight", "Delivery Time", "Loaded Time"))
     tree.heading("#0", text="Package ID", anchor=tk.CENTER)
     tree.column("#0", minwidth=0, width=100, stretch=tk.NO, anchor=tk.CENTER)
     tree.heading("Truck ID", text="Truck ID", anchor=tk.CENTER)
     tree.heading("Address", text="Address", anchor=tk.CENTER)
     tree.heading("Weight", text="Weight (lbs)", anchor=tk.CENTER)
-    tree.heading("Delivery Time", text="Delivery Time", anchor=tk.CENTER)
-    tree.heading("Status", text="Status", anchor=tk.CENTER)
+    tree.heading("Delivery Time", text="Estimated Delivery Time", anchor=tk.CENTER)
     tree.heading("Loaded Time", text="Loaded Time", anchor=tk.CENTER)
 
     for package_data in sorted_packages:
         truck_info = int(package_data.truck_info) + 1 if package_data.truck_info != 'None' else "Not on truck"
+        loaded_time_str = str(package_data.loaded_time) if package_data.loaded_time else "Not loaded"
         tree.insert("", "end", text=str(package_data.package_id),
-                    values=(truck_info,
-                            f"{package_data.address}, {package_data.city}, {package_data.state} {package_data.zip_code}",
-                            package_data.weight, package_data.converted_delivery_time, package_data.status,
-                            package_data.loaded_time))
+                    values=(
+                        truck_info,
+                        f"{package_data.address}, {package_data.city}, {package_data.state} "
+                        f"{package_data.zip_code}", package_data.weight, package_data.converted_delivery_time,
+                        loaded_time_str))
 
     tree.pack(fill=tk.BOTH, expand=True)
     scroll_y = ttk.Scrollbar(all_packages_window, orient=tk.VERTICAL, command=tree.yview)
@@ -546,6 +568,19 @@ def display_all_packages_info(packages, convert_timedelta):
         tree.column(col, anchor=tk.CENTER)
     all_packages_window.minsize(800, 400)
     all_packages_window.mainloop()
+
+
+def view_truck_packages(truck_id_entry):
+    all_packages = package_table.get_all_packages()
+    truck_packages = []
+
+    corrected_truck_id = str(int(truck_id_entry) - 1)
+    for current_package in all_packages:
+        if str(current_package.truck_info) == str(corrected_truck_id):
+            truck_packages.append(current_package)
+
+    # Display all packages for the specified truck
+    display_all_packages_info(truck_packages, truck_id_entry)
 
 
 def view_mileage():
